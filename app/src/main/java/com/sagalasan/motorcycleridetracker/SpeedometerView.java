@@ -19,7 +19,7 @@ import java.util.Timer;
 /**
  * Created by Christiaan on 2/26/2015.
  */
-public class SpeedometerView extends View implements SensorEventListener
+public class SpeedometerView extends View
 {
     private int screenWidth, screenHeight;
     private int cx, cy;
