@@ -56,6 +56,9 @@ public class SpeedometerView extends View
         init();
     }
 
+    /**
+     * Initializes the all the parts of the GUI in the custom view
+     */
     private void init()
     {
         bitNeedle = BitmapFactory.decodeResource(getResources(), R.drawable.speedometer_needle_blurred);
@@ -81,6 +84,11 @@ public class SpeedometerView extends View
         tempCanvas = new Canvas(tempBitmap);
     }
 
+    /**
+     * Override method onMeasure
+     * @param widthMeasureSpec
+     * @param heightMeasureSpec
+     */
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
     {
         mWidth = View.MeasureSpec.getSize(widthMeasureSpec);
@@ -89,11 +97,19 @@ public class SpeedometerView extends View
         setMeasuredDimension(mWidth, newDimen);
     }
 
+    /**
+     * Calibrate angle to the zero angle of the speedometer
+     * @param degrees
+     * @return
+     */
     private float degreeToAngle(float degrees)
     {
         return (degrees + zeroDegrees);
     }
 
+    /**
+     * Function that is called so that the view can be invalidated
+     */
     private void reDraw()
     {
         tempBitmap = Bitmap.createBitmap(screenWidth, screenWidth, Bitmap.Config.ARGB_8888);
@@ -101,6 +117,10 @@ public class SpeedometerView extends View
         this.invalidate();
     }
 
+    /**
+     * Override onDraw method for custom view
+     * @param canvas
+     */
     protected void onDraw(Canvas canvas)
     {
         super.onDraw(canvas);
@@ -119,11 +139,17 @@ public class SpeedometerView extends View
         }
     }
 
+    /**
+     * Helper method that draws the gauge to a canvas
+     */
     private void drawGauge()
     {
         tempCanvas.drawBitmap(bitGauge, matrixGauge, paint);
     }
 
+    /**
+     * Helper method that draws the needle to a canvas
+     */
     private void drawNeedle()
     {
         if(needleInitialized)
@@ -137,6 +163,9 @@ public class SpeedometerView extends View
         }
     }
 
+    /**
+     * Main method for calculating the movement of the needle
+     */
     private void moveNeedle()
     {
         if(!needleNeedsToMove()) return;
@@ -147,8 +176,6 @@ public class SpeedometerView extends View
             float delta = (currentTime - lastNeedleMoveTime) / 1000.0f;
 
             float direction = Math.signum(needleVelocity);
-            //double exponent = (double) (Math.abs((needleTarget - needlePosition) * .3));
-            //needleVelocity = (float) (5.0f * Math.pow(2, (exponent - 2) * delta * direction));
             if (Math.abs(needleVelocity) < 90.0f) {
                 needleAcceleration = 1.0f * (needleTarget - needlePosition);
             } else {
@@ -178,17 +205,29 @@ public class SpeedometerView extends View
         }
     }
 
+    /**
+     * Determines whether the needle needs to move or not
+     * based on the target position of the needle
+     * @return
+     */
     private boolean needleNeedsToMove()
     {
         return Math.abs(needleTarget - needlePosition) > .01f;
     }
 
+    /**
+     * Method that can be called publicly that will set the current speed of the speedometer
+     * @param speed
+     */
     public void setSpeed(float speed)
     {
         needleTarget = (speed * degreesPerTick) / 10;
         reDraw();
     }
 
+    /**
+     * Public method that will reset the needle to 0;
+     */
     public void reset()
     {
         tempBitmap = Bitmap.createBitmap(screenWidth, screenWidth, Bitmap.Config.ARGB_8888);
@@ -197,26 +236,31 @@ public class SpeedometerView extends View
         this.invalidate();
     }
 
-    public void update(float a)
-    {
-        tempBitmap = Bitmap.createBitmap(screenWidth, screenWidth, Bitmap.Config.ARGB_8888);
-        tempCanvas = new Canvas(tempBitmap);
-        matrixNeedle.postRotate(a, newDimen / 2, newDimen / 2);
-        angle = a;
-        if(angle >= 360) angle = 0;
-        this.invalidate();
-    }
-
+    /**
+     * Method imports the screen size
+     * Called publicly
+     * @param x
+     * @param y
+     */
     public void setScreenSize(int x, int y)
     {
         screenWidth = x;
         screenHeight = y;
     }
 
+    /**
+     * Returns the target angle of the needle
+     * @return
+     */
     public float returnNeedleTarget()
     {
         return needleTarget;
     }
+
+    /**
+     * Returns the the current needle velocity
+     * @return
+     */
     public float returnNeedleVelocity()
     {
         return needleVelocity;
