@@ -29,18 +29,12 @@ import java.util.logging.LogRecord;
 
 public class Speedometer extends ActionBarActivity {
 
-    int width, height;
-    int newWidth, newHeight;
-    float scale;
     ImageView needle;
     ImageView gauge;
     private Timer timer;
     private SpeedometerView sv;
-    float angle;
-    boolean reverse = false;
     final Handler handler = new Handler();
     TextView ag;
-    float currentAngle;
     float someSpeed = 0;
 
     Runnable myRunnable = new Runnable()
