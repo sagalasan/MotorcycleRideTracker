@@ -113,11 +113,6 @@ public class SpeedometerView extends View implements SensorEventListener
         drawGauge();
         drawNeedle();
 
-
-
-        //tempCanvas.drawBitmap(bitGauge, matrixGauge, paint);
-        //tempCanvas.drawBitmap(bitNeedle, matrixNeedle, paint);
-
         cx = (mWidth - newDimen) / 2;
         cy = (mWidth - newDimen) / 2;
 
@@ -237,13 +232,5 @@ public class SpeedometerView extends View implements SensorEventListener
     public float returnNeedleVelocity()
     {
         return needleVelocity;
-    }
-
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-    }
-
-    public void onSensorChanged(SensorEvent event)
-    {
-
     }
 }
