@@ -207,13 +207,6 @@ public class SpeedometerView extends View
         this.invalidate();
     }
 
-    public void startup()
-    {
-        tempBitmap = Bitmap.createBitmap(screenWidth, screenHeight, Bitmap.Config.ARGB_8888);
-        tempCanvas = new Canvas(tempBitmap);
-
-    }
-
     public void setScreenSize(int x, int y)
     {
         screenWidth = x;
