@@ -27,8 +27,7 @@ public class SpeedometerView extends View
     private Bitmap bitGauge;
     private Bitmap bitNeedle;
     private Bitmap tempBitmap;
-
-    private TextView digitalSpeed;
+    private Bitmap bitSpeedo;
 
     private Matrix matrixNeedle;
     private Matrix matrixGauge;
@@ -39,6 +38,9 @@ public class SpeedometerView extends View
 
     private Paint paint;
     private Paint speedoPaint;
+    private Paint speedoUnitPaint;
+
+    private String speedUnits;
 
     private static final float degreesPerTick = 18.0f;
     private static final float minDegrees = -36.0f;
@@ -53,7 +55,7 @@ public class SpeedometerView extends View
     private float needleAcceleration = 0.0f;
     private long lastNeedleMoveTime = -1L;
 
-    private static final float speedoTextSize = 20.0f;
+    private static final float speedoTextSize = 200.0f;
 
 
     private static final String TAG = "MyActivity";
@@ -72,11 +74,19 @@ public class SpeedometerView extends View
         bitNeedle = BitmapFactory.decodeResource(getResources(), R.drawable.speedometer_needle_blurred);
         bitGauge = BitmapFactory.decodeResource(getResources(), R.drawable.speedometer_face_blurred);
 
+        speedUnits = "MPH";
+
         paint = new Paint();
 
         speedoPaint = new Paint();
         speedoPaint.setColor(Color.WHITE);
         speedoPaint.setTextSize(speedoTextSize);
+        speedoPaint.setTextAlign(Paint.Align.CENTER);
+
+        speedoUnitPaint = new Paint();
+        speedoUnitPaint.setColor(Color.WHITE);
+        speedoUnitPaint.setTextSize(speedoTextSize - 150);
+        speedoUnitPaint.setTextAlign(Paint.Align.CENTER);
 
         width = bitNeedle.getWidth();
         height = bitNeedle.getHeight();
@@ -181,7 +191,8 @@ public class SpeedometerView extends View
     {
         int currentSpeed = (int) speed;
         String speedText = String.valueOf(currentSpeed);
-        canvas.drawText(speedText, mWidth / 2, mWidth - 30, speedoPaint);
+        canvas.drawText(speedText, mWidth / 2, mWidth - speedoTextSize - 50, speedoPaint);
+        canvas.drawText(speedUnits, mWidth / 2, mWidth - speedoTextSize + 10, speedoUnitPaint);
     }
 
     /**

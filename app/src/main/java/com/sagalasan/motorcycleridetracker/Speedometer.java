@@ -44,7 +44,8 @@ public class Speedometer extends ActionBarActivity {
         {
             ag.setText(String.valueOf(sv.returnNeedleTarget()) + " " + String.valueOf(sv.returnNeedleVelocity()));
             someSpeed += 2;
-            //sv.setSpeed(someSpeed);
+            sv.setSpeed(someSpeed);
+            if (someSpeed > 120) someSpeed = 0;
         }
     };
 
