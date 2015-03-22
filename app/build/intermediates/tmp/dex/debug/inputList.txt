@@ -1,0 +1,5 @@
+C:\Users\Christiaan\Box Sync\Workspace_A\MotorcycleRideTracker\app\build\intermediates\classes\debug
+C:\Users\Christiaan\Box Sync\Workspace_A\MotorcycleRideTracker\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-0c849a738879a234df227b02fb7735f039a2beae.jar
+C:\Users\Christiaan\Box Sync\Workspace_A\MotorcycleRideTracker\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-a7c748f3392f9364f7c805bbf1cc91df95293452.jar
+C:\Users\Christiaan\Box Sync\Workspace_A\MotorcycleRideTracker\app\build\intermediates\pre-dexed\debug\classes-ff73cb13bae9d6606063d334f101cd9b3bfc893e.jar
+C:\Users\Christiaan\Box Sync\Workspace_A\MotorcycleRideTracker\app\build\intermediates\pre-dexed\debug\classes-3c15e4e3305cecffb98584c3011b115b3ddeebd2.jar

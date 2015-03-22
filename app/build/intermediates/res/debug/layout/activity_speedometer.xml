@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/carbon_fiber_background_v"
+    tools:context=".Speedometer"
+    android:id="@+id/activity_speedometer"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.sagalasan.motorcycleridetracker.SpeedometerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:id="@+id/speedo"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentAngle"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/C:/Users/Christiaan/Box%20Sync/Workspace_A/MotorcycleRideTracker/app/src/main/res/layout/activity_speedometer.xml -->
