@@ -4,12 +4,14 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.RotateAnimation;
+import android.widget.TextView;
 
 /**
  * Created by Christiaan on 2/26/2015.
@@ -26,13 +28,17 @@ public class SpeedometerView extends View
     private Bitmap bitNeedle;
     private Bitmap tempBitmap;
 
+    private TextView digitalSpeed;
+
     private Matrix matrixNeedle;
     private Matrix matrixGauge;
     private RotateAnimation aStart;
 
     private float angle;
+    private float speed;
 
     private Paint paint;
+    private Paint speedoPaint;
 
     private static final float degreesPerTick = 18.0f;
     private static final float minDegrees = -36.0f;
@@ -46,6 +52,8 @@ public class SpeedometerView extends View
     private float needleVelocity = 0.0f;
     private float needleAcceleration = 0.0f;
     private long lastNeedleMoveTime = -1L;
+
+    private static final float speedoTextSize = 20.0f;
 
 
     private static final String TAG = "MyActivity";
@@ -65,6 +73,10 @@ public class SpeedometerView extends View
         bitGauge = BitmapFactory.decodeResource(getResources(), R.drawable.speedometer_face_blurred);
 
         paint = new Paint();
+
+        speedoPaint = new Paint();
+        speedoPaint.setColor(Color.WHITE);
+        speedoPaint.setTextSize(speedoTextSize);
 
         width = bitNeedle.getWidth();
         height = bitNeedle.getHeight();
@@ -133,6 +145,8 @@ public class SpeedometerView extends View
 
         canvas.drawBitmap(tempBitmap, cx, cy, paint);
 
+        drawDigitalSpeedo(canvas);
+
         if(needleNeedsToMove())
         {
             moveNeedle();
@@ -161,6 +175,13 @@ public class SpeedometerView extends View
             matrixNeedle.postRotate(handAngle, newDimen / 2, newDimen / 2);
             tempCanvas.drawBitmap(bitNeedle, matrixNeedle, paint);
         }
+    }
+
+    private void drawDigitalSpeedo(Canvas canvas)
+    {
+        int currentSpeed = (int) speed;
+        String speedText = String.valueOf(currentSpeed);
+        canvas.drawText(speedText, mWidth / 2, mWidth - 30, speedoPaint);
     }
 
     /**
@@ -222,6 +243,7 @@ public class SpeedometerView extends View
     public void setSpeed(float speed)
     {
         needleTarget = (speed * degreesPerTick) / 10;
+        this.speed = speed;
         reDraw();
     }
 
