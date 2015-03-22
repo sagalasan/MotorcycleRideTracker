@@ -30,9 +30,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49cdc0d4-cb77-4fcd-aa95-c9e3b3102320" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Christiaan\Box Sync\Workspace_A\MotorcycleRideTracker\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\res\values-large\values.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/SpeedometerView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/SpeedometerView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/tmp/dex/debug/inputList.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/tmp/dex/debug/inputList.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Motorcycle Ride Tracker.iws" />
@@ -1047,7 +1046,11 @@
       <created>1425424722582</created>
       <updated>1425424722583</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Stuff">
+      <created>1427063327748</created>
+      <updated>1427063327748</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1160,7 +1163,8 @@
     <MESSAGE value="Removed unused method" />
     <MESSAGE value="Added comments and removed unused methods" />
     <MESSAGE value="Removed unused global variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unused global variables" />
+    <MESSAGE value="Stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
