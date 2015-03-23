@@ -2,4 +2,7 @@
     <declare-styleable name="SpeedometerView">
 
     </declare-styleable>
+    <declare-styleable name="InfoBox">
+
+    </declare-styleable>
 </resources>

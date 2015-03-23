@@ -1305,8 +1305,9 @@ containing a value of this type.
         public static final int carbon_fiber_background_v=0x7f020034;
         public static final int cf_tex_bg=0x7f020035;
         public static final int ic_launcher=0x7f020036;
-        public static final int speedometer_face_blurred=0x7f020037;
-        public static final int speedometer_needle_blurred=0x7f020038;
+        public static final int info_box=0x7f020037;
+        public static final int speedometer_face_blurred=0x7f020038;
+        public static final int speedometer_needle_blurred=0x7f020039;
     }
     public static final class id {
         public static final int action_bar=0x7f080031;
@@ -2449,6 +2450,11 @@ containing a value of this type.
           @attr name com.sagalasan.motorcycleridetracker:topBottomBarArrowSize
         */
         public static final int DrawerArrowToggle_topBottomBarArrowSize = 4;
+        /** Attributes that can be used with a InfoBox.
+         */
+        public static final int[] InfoBox = {
+            
+        };
         /** Attributes that can be used with a LinearLayoutCompat.
            <p>Includes the following attributes:</p>
            <table>

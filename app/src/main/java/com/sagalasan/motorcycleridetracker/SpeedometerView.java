@@ -134,7 +134,7 @@ public class SpeedometerView extends View
      */
     private void reDraw()
     {
-        tempBitmap = Bitmap.createBitmap(screenWidth, screenWidth, Bitmap.Config.ARGB_8888);
+        tempBitmap = Bitmap.createBitmap(screenWidth, screenHeight, Bitmap.Config.ARGB_8888);
         tempCanvas = new Canvas(tempBitmap);
         this.invalidate();
     }
