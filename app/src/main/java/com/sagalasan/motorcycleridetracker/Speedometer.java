@@ -58,7 +58,6 @@ public class Speedometer extends ActionBarActivity {
         sv = (SpeedometerView) findViewById(R.id.speedo);
         sv.setScreenSize(size.x, size.y);
 
-
         sv.reset();
         sv.setSpeed(0);
         //startup();

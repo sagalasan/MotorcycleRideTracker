@@ -39,6 +39,9 @@ public class SpeedometerView extends View
     private Paint paint;
     private Paint speedoPaint;
     private Paint speedoUnitPaint;
+    private Paint nameTextPaint;
+    private Paint infoTextPaint;
+    private Paint subTextPaint;
 
     private String speedUnits;
 
@@ -55,8 +58,18 @@ public class SpeedometerView extends View
     private float needleAcceleration = 0.0f;
     private long lastNeedleMoveTime = -1L;
 
-    private static final float speedoTextSize = 200.0f;
+    private String trip = "Trip";
+    private String averageSpeed = "Avg Speed";
+    private String stopTime = "Stopped Time";
+    private String leanAngle = "Lean Angle";
+    private String heading = "Heading";
+    private static final int boxZero = 1025;
 
+    private static final float speedoTextSize = 200.0f;
+    private static final float nameTextSize = 100.0f;
+    private static final float infoTextSize = 100.0f;
+    private static final float subTextSize = 35.0f;
+    private static final float textMargin = 30.0f;
 
     private static final String TAG = "MyActivity";
 
@@ -76,17 +89,7 @@ public class SpeedometerView extends View
 
         speedUnits = "MPH";
 
-        paint = new Paint();
-
-        speedoPaint = new Paint();
-        speedoPaint.setColor(Color.WHITE);
-        speedoPaint.setTextSize(speedoTextSize);
-        speedoPaint.setTextAlign(Paint.Align.CENTER);
-
-        speedoUnitPaint = new Paint();
-        speedoUnitPaint.setColor(Color.WHITE);
-        speedoUnitPaint.setTextSize(speedoTextSize - 150);
-        speedoUnitPaint.setTextAlign(Paint.Align.CENTER);
+        initializePaints();
 
         width = bitNeedle.getWidth();
         height = bitNeedle.getHeight();
@@ -106,6 +109,36 @@ public class SpeedometerView extends View
         tempCanvas = new Canvas(tempBitmap);
     }
 
+    private void initializePaints()
+    {
+        paint = new Paint();
+
+        speedoPaint = new Paint();
+        speedoPaint.setColor(Color.WHITE);
+        speedoPaint.setTextSize(speedoTextSize);
+        speedoPaint.setTextAlign(Paint.Align.CENTER);
+
+        speedoUnitPaint = new Paint();
+        speedoUnitPaint.setColor(Color.WHITE);
+        speedoUnitPaint.setTextSize(speedoTextSize - 150);
+        speedoUnitPaint.setTextAlign(Paint.Align.CENTER);
+
+        nameTextPaint = new Paint();
+        nameTextPaint.setColor(Color.WHITE);
+        nameTextPaint.setTextAlign(Paint.Align.CENTER);
+        nameTextPaint.setTextSize((int) nameTextSize);
+
+        infoTextPaint = new Paint();
+        infoTextPaint.setColor(Color.WHITE);
+        infoTextPaint.setTextAlign(Paint.Align.CENTER);
+        infoTextPaint.setTextSize((int) infoTextSize);
+
+        subTextPaint = new Paint();
+        subTextPaint.setColor(Color.WHITE);
+        subTextPaint.setTextAlign(Paint.Align.LEFT);
+        subTextPaint.setTextSize(subTextSize);
+    }
+
     /**
      * Override method onMeasure
      * @param widthMeasureSpec
@@ -116,7 +149,7 @@ public class SpeedometerView extends View
         mWidth = View.MeasureSpec.getSize(widthMeasureSpec);
         mHeight = View.MeasureSpec.getSize(heightMeasureSpec);
         //Log.v(TAG, String.valueOf(mWidth));
-        setMeasuredDimension(mWidth, newDimen);
+        setMeasuredDimension(mWidth, mHeight);
     }
 
     /**
@@ -156,6 +189,8 @@ public class SpeedometerView extends View
         canvas.drawBitmap(tempBitmap, cx, cy, paint);
 
         drawDigitalSpeedo(canvas);
+        drawInfoBoxTrip(canvas);
+        drawInfoBoxAvgSpeed(canvas);
 
         if(needleNeedsToMove())
         {
@@ -191,8 +226,24 @@ public class SpeedometerView extends View
     {
         int currentSpeed = (int) speed;
         String speedText = String.valueOf(currentSpeed);
-        canvas.drawText(speedText, mWidth / 2, mWidth - speedoTextSize - 50, speedoPaint);
-        canvas.drawText(speedUnits, mWidth / 2, mWidth - speedoTextSize + 10, speedoUnitPaint);
+        canvas.drawText(speedText, mWidth / 2, mWidth - speedoTextSize - 70, speedoPaint);
+        canvas.drawText(speedUnits, mWidth / 2, mWidth - speedoTextSize - 10, speedoUnitPaint);
+    }
+
+    private void drawInfoBoxTrip(Canvas canvas)
+    {
+        canvas.drawText(trip, mWidth / 4, boxZero, nameTextPaint);
+        canvas.drawText("00.00 mi", mWidth / 4, boxZero + infoTextSize + textMargin, infoTextPaint);
+        canvas.drawText("00:00:00", mWidth / 4, boxZero + 2 * (infoTextSize + textMargin), infoTextPaint);
+    }
+
+    private void drawInfoBoxAvgSpeed(Canvas canvas)
+    {
+        canvas.drawText(averageSpeed, 3 * mWidth / 4, boxZero, nameTextPaint);
+        canvas.drawText("Moving:", mWidth / 2 + 30, boxZero + nameTextSize / 2 - 10, subTextPaint);
+        canvas.drawText("00.0 MPH", 3 * mWidth / 4, boxZero + nameTextSize + textMargin, infoTextPaint);
+        canvas.drawText("All:", mWidth / 2 + 30, boxZero + nameTextSize + 2 * textMargin + 10, subTextPaint);
+        canvas.drawText("00.0 MPH", 3 * mWidth / 4, boxZero + 2 * (infoTextSize + textMargin), infoTextPaint);
     }
 
     /**
