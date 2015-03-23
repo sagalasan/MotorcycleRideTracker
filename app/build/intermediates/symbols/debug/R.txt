@@ -339,8 +339,9 @@ int drawable carbon_fiber_background_h 0x7f020033
 int drawable carbon_fiber_background_v 0x7f020034
 int drawable cf_tex_bg 0x7f020035
 int drawable ic_launcher 0x7f020036
-int drawable speedometer_face_blurred 0x7f020037
-int drawable speedometer_needle_blurred 0x7f020038
+int drawable info_box 0x7f020037
+int drawable speedometer_face_blurred 0x7f020038
+int drawable speedometer_needle_blurred 0x7f020039
 int id action_bar 0x7f080031
 int id action_bar_activity_content 0x7f080000
 int id action_bar_container 0x7f080030
@@ -354,14 +355,13 @@ int id action_menu_presenter 0x7f080003
 int id action_mode_bar 0x7f08002e
 int id action_mode_bar_stub 0x7f08002d
 int id action_mode_close_button 0x7f080020
-int id action_settings 0x7f080042
+int id action_settings 0x7f080041
 int id activity_chooser_view_content 0x7f080021
 int id activity_speedometer 0x7f08003f
 int id always 0x7f080016
 int id beginning 0x7f080013
 int id checkbox 0x7f080029
 int id collapseActionView 0x7f080017
-int id currentAngle 0x7f080041
 int id decor_content_parent 0x7f08002f
 int id default_activity_button 0x7f080024
 int id dialog 0x7f08001b
@@ -746,6 +746,7 @@ int styleable DrawerArrowToggle_middleBarArrowSize 5
 int styleable DrawerArrowToggle_spinBars 1
 int styleable DrawerArrowToggle_thickness 7
 int styleable DrawerArrowToggle_topBottomBarArrowSize 4
+int[] styleable InfoBox { }
 int[] styleable LinearLayoutCompat { 0x010100af, 0x010100c4, 0x01010126, 0x01010127, 0x01010128, 0x7f01000b, 0x7f010028, 0x7f010029, 0x7f01002a }
 int styleable LinearLayoutCompat_android_baselineAligned 2
 int styleable LinearLayoutCompat_android_baselineAlignedChildIndex 3
