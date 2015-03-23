@@ -34,7 +34,6 @@ public class Speedometer extends ActionBarActivity {
     private Timer timer;
     private SpeedometerView sv;
     final Handler handler = new Handler();
-    TextView ag;
     float someSpeed = 0;
 
     Runnable myRunnable = new Runnable()
@@ -42,7 +41,6 @@ public class Speedometer extends ActionBarActivity {
         @Override
         public void run()
         {
-            ag.setText(String.valueOf(sv.returnNeedleTarget()) + " " + String.valueOf(sv.returnNeedleVelocity()));
             someSpeed += 2;
             sv.setSpeed(someSpeed);
             if (someSpeed > 120) someSpeed = 0;
@@ -59,8 +57,6 @@ public class Speedometer extends ActionBarActivity {
         display.getSize(size);
         sv = (SpeedometerView) findViewById(R.id.speedo);
         sv.setScreenSize(size.x, size.y);
-
-        ag = (TextView) findViewById(R.id.currentAngle);
 
 
         sv.reset();
