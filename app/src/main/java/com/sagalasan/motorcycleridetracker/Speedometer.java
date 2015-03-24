@@ -1,5 +1,7 @@
 package com.sagalasan.motorcycleridetracker;
 
+import android.app.Activity;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -9,6 +11,9 @@ import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.BitmapDrawable;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -27,7 +32,7 @@ import java.util.TimerTask;
 import java.util.logging.LogRecord;
 
 
-public class Speedometer extends ActionBarActivity {
+public class Speedometer extends Activity implements LocationListener {
 
     ImageView needle;
     ImageView gauge;
@@ -35,6 +40,7 @@ public class Speedometer extends ActionBarActivity {
     private SpeedometerView sv;
     final Handler handler = new Handler();
     float someSpeed = 0;
+    private float speed;
 
     Runnable myRunnable = new Runnable()
     {
@@ -56,6 +62,11 @@ public class Speedometer extends ActionBarActivity {
         sv = (SpeedometerView) findViewById(R.id.speedo);
         sv.setScreenSize(size.x, size.y);
 
+        LocationManager lm = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 250, 0, this);
+
+        this.onLocationChanged(null);
+
         sv.reset();
         sv.setSpeed(0);
         //startup();
@@ -75,27 +86,25 @@ public class Speedometer extends ActionBarActivity {
         handler.post(myRunnable);
     }
 
-
-
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_speedometer, menu);
-        return true;
+    public void onLocationChanged(Location location)
+    {
+        speed = location.getSpeed();
+        sv.setSpeed(speed);
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    public void onStatusChanged(String provider, int status, Bundle extras) {
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+    }
 
-        return super.onOptionsItemSelected(item);
+    @Override
+    public void onProviderEnabled(String provider) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(String provider) {
+
     }
 }

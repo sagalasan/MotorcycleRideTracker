@@ -23,6 +23,8 @@ public class SpeedometerView extends View
     private int width, height, newDimen, mWidth, mHeight;
     private float scale;
 
+    private boolean gpsStatus = false;
+
     private Canvas tempCanvas;
     private Bitmap bitGauge;
     private Bitmap bitNeedle;
@@ -330,6 +332,11 @@ public class SpeedometerView extends View
     {
         screenWidth = x;
         screenHeight = y;
+    }
+
+    public void setGpsStatus(boolean b)
+    {
+        gpsStatus = b;
     }
 
     /**
