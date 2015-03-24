@@ -41,9 +41,7 @@ public class Speedometer extends ActionBarActivity {
         @Override
         public void run()
         {
-            someSpeed += 2;
-            sv.setSpeed(someSpeed);
-            if (someSpeed > 120) someSpeed = 0;
+
         }
     };
 
@@ -69,7 +67,7 @@ public class Speedometer extends ActionBarActivity {
             {
                 startup();
             }
-        }, 0, 100);
+        }, 0, 250);
     }
 
     private void startup()
