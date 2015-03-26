@@ -62,8 +62,10 @@ public class Speedometer extends Activity implements LocationListener {
         sv = (SpeedometerView) findViewById(R.id.speedo);
         sv.setScreenSize(size.x, size.y);
 
+        sv.setStartTime(System.currentTimeMillis());
+
         LocationManager lm = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 250, 0, this);
+        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 500, 0, this);
 
         this.onLocationChanged(null);
 
@@ -89,8 +91,12 @@ public class Speedometer extends Activity implements LocationListener {
     @Override
     public void onLocationChanged(Location location)
     {
-        speed = location.getSpeed();
-        sv.setSpeed(speed);
+        if(location != null)
+        {
+            speed = location.getSpeed();
+            speed *= 2.23694;
+            sv.setSpeed(speed);
+        }
     }
 
     @Override

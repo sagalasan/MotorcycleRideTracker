@@ -73,6 +73,10 @@ public class SpeedometerView extends View
     private static final float subTextSize = 35.0f;
     private static final float textMargin = 30.0f;
 
+    private long startTime;
+    private long tripTime;
+    private String elapsedTime = "00:00:00";
+
     private static final String TAG = "MyActivity";
 
     public SpeedometerView(Context context, AttributeSet attrs)
@@ -236,7 +240,7 @@ public class SpeedometerView extends View
     {
         canvas.drawText(trip, mWidth / 4, boxZero, nameTextPaint);
         canvas.drawText("00.00 mi", mWidth / 4, boxZero + infoTextSize + textMargin, infoTextPaint);
-        canvas.drawText("00:00:00", mWidth / 4, boxZero + 2 * (infoTextSize + textMargin), infoTextPaint);
+        canvas.drawText(elapsedTime, mWidth / 4, boxZero + 2 * (infoTextSize + textMargin), infoTextPaint);
     }
 
     private void drawInfoBoxAvgSpeed(Canvas canvas)
@@ -332,6 +336,23 @@ public class SpeedometerView extends View
     {
         screenWidth = x;
         screenHeight = y;
+    }
+
+    public void setTripTime(long s)
+    {
+        tripTime = s;
+        long elapsed = tripTime - startTime;
+        long secs = elapsed / 1000;
+        long mins = elapsed / 1000 / 60;
+        long hours = elapsed / 1000 /60 / 60;
+        secs = secs % 60;
+        mins = mins % 60;
+        elapsedTime = hours + ":" + mins + ":" + secs;
+    }
+
+    public void setStartTime(long s)
+    {
+        startTime = s;
     }
 
     public void setGpsStatus(boolean b)
