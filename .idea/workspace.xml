@@ -29,24 +29,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49cdc0d4-cb77-4fcd-aa95-c9e3b3102320" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/MotorcycleData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/MotorcycleSavedRoutes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/PostTrackingEdit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_motorcycle_saved_routes.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_post_tracking_edit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_motorcycle_saved_routes.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_post_tracking_edit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/MotorcyclePoint.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/MotorcyclePoint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/MyDBHandler.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/MyDBHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/sagalasan/motorcycleridetracker/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/sagalasan/motorcycleridetracker/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/Speedometer.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/Speedometer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/SpeedometerView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/sagalasan/motorcycleridetracker/SpeedometerView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_speedometer.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_speedometer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Motorcycle Ride Tracker.iws" />
@@ -1341,7 +1323,11 @@
       <created>1427842984183</created>
       <updated>1427842984183</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Major Update">
+      <created>1428993972871</created>
+      <updated>1428993972871</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1365,7 +1351,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1463,7 +1449,8 @@
     <MESSAGE value="Added Fine Location permission to manifest" />
     <MESSAGE value="Implemented actual speedometer functionality" />
     <MESSAGE value="Implemented DBHelper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented DBHelper" />
+    <MESSAGE value="Major Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Major Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1893,6 +1880,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26193923" vertical-offset="635" max-vertical-offset="1377">
           <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

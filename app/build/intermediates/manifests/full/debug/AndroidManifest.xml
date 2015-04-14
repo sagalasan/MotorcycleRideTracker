@@ -26,6 +26,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.sagalasan.motorcycleridetracker.PostTrackingEdit"
+            android:label="@string/title_activity_post_tracking_edit"
+            android:theme="@style/MyTextStyle" >
+        </activity>
+        <activity
+            android:name="com.sagalasan.motorcycleridetracker.MotorcycleSavedRoutes"
+            android:label="@string/title_activity_motorcycle_saved_routes" >
+        </activity>
     </application>
 
 </manifest>

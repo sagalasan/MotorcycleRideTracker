@@ -177,6 +177,8 @@
     <string name="app_name">Motorcycle Ride Tracker</string>
     <string name="hello_world">Hello world!</string>
     <string name="needle">needle</string>
+    <string name="title_activity_motorcycle_saved_routes">MotorcycleSavedRoutes</string>
+    <string name="title_activity_post_tracking_edit">PostTrackingEdit</string>
     <!-- From: file:/C:/Users/Christiaan/Box%20Sync/Workspace_A/MotorcycleRideTracker/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -938,6 +940,10 @@
     </style>
     <!-- From: file:/C:/Users/Christiaan/Box%20Sync/Workspace_A/MotorcycleRideTracker/app/src/main/res/values/styles.xml -->
     <eat-comment/>
+    <style name="MyTextStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">32dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
     <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
