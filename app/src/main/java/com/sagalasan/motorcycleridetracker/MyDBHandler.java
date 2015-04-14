@@ -56,8 +56,8 @@ public class MyDBHandler extends SQLiteOpenHelper
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAME, mp.get_name());
         values.put(COLUMN_TIME, mp.get_time());
-        values.put(COLUMN_LATITUDE, mp.get_latitude());
-        values.put(COLUMN_LONGITUDE, mp.get_longitude());
+        values.put(COLUMN_LATITUDE, String.valueOf(mp.get_latitude()));
+        values.put(COLUMN_LONGITUDE, String.valueOf(mp.get_longitude()));
         values.put(COLUMN_ELEVATION, mp.get_elevation());
         values.put(COLUMN_SPEED, mp.get_speed());
         values.put(COLUMN_LEAN, mp.get_lean());
@@ -73,5 +73,6 @@ public class MyDBHandler extends SQLiteOpenHelper
         String mpName = mp.get_name();
         String query = "DELETE FROM " + TABLE_MOTORCYCLE + " WHERE " + COLUMN_NAME + "=\"" + mpName + "\";";
         db.execSQL(query);
+        db.close();
     }
 }

@@ -1,16 +1,58 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/carbon_fiber_background_v"
-    tools:context=".Speedometer"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_speedometer"
-    xmlns:custom="http://schemas.android.com/apk/res-auto">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carbon_fiber_background_v"
+    android:orientation="vertical"
+    tools:context=".Speedometer">
 
-    <com.sagalasan.motorcycleridetracker.SpeedometerView
+    <TextView
+        android:id="@+id/count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:id="@+id/speedo"/>
+        android:textSize="24dp"
+        android:textColor="#ffffff"
+        android:text="12"/>
+
+    <com.sagalasan.motorcycleridetracker.SpeedometerView
+        android:id="@+id/speedo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/start_tracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="startTracker"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Start Tracking"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/view_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="viewRoutes"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="View Routes"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -76,6 +76,8 @@ public class SpeedometerView extends View
     private long startTime;
     private long tripTime;
     private String elapsedTime = "00:00:00";
+    private String totalDistance = "00.0 mi";
+    private String bearing = "278";
 
     private static final String TAG = "MyActivity";
 
@@ -197,6 +199,7 @@ public class SpeedometerView extends View
         drawDigitalSpeedo(canvas);
         drawInfoBoxTrip(canvas);
         drawInfoBoxAvgSpeed(canvas);
+        drawBearing(canvas);
 
         if(needleNeedsToMove())
         {
@@ -239,7 +242,7 @@ public class SpeedometerView extends View
     private void drawInfoBoxTrip(Canvas canvas)
     {
         canvas.drawText(trip, mWidth / 4, boxZero, nameTextPaint);
-        canvas.drawText("00.00 mi", mWidth / 4, boxZero + infoTextSize + textMargin, infoTextPaint);
+        canvas.drawText(totalDistance, mWidth / 4, boxZero + infoTextSize + textMargin, infoTextPaint);
         canvas.drawText(elapsedTime, mWidth / 4, boxZero + 2 * (infoTextSize + textMargin), infoTextPaint);
     }
 
@@ -250,6 +253,13 @@ public class SpeedometerView extends View
         canvas.drawText("00.0 MPH", 3 * mWidth / 4, boxZero + nameTextSize + textMargin, infoTextPaint);
         canvas.drawText("All:", mWidth / 2 + 30, boxZero + nameTextSize + 2 * textMargin + 10, subTextPaint);
         canvas.drawText("00.0 MPH", 3 * mWidth / 4, boxZero + 2 * (infoTextSize + textMargin), infoTextPaint);
+    }
+
+    private void drawBearing(Canvas canvas)
+    {
+        String temp = bearing + Character.toString((char) 176);
+        canvas.drawText("Bearing", mWidth / 4, boxZero + 400f, nameTextPaint);
+        canvas.drawText(temp, 3 * mWidth / 4, boxZero + 400f, infoTextPaint);
     }
 
     /**
@@ -348,6 +358,21 @@ public class SpeedometerView extends View
         secs = secs % 60;
         mins = mins % 60;
         elapsedTime = hours + ":" + mins + ":" + secs;
+    }
+
+    public void setElapsedTime(String t)
+    {
+        elapsedTime = t;
+    }
+
+    public void setTotalDistance(String d)
+    {
+        totalDistance = d;
+    }
+
+    public void setBearing(String b)
+    {
+        bearing = b;
     }
 
     public void setStartTime(long s)

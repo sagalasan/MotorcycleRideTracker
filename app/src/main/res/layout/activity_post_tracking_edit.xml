@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MyTextStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carbon_fiber_background_v"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.sagalasan.motorcycleridetracker.PostTrackingEdit">
+
+    <LinearLayout
+        android:id="@+id/lol_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Name:" />
+
+        <EditText
+            android:id="@+id/route_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/name_taken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lol_name"
+        android:text="Name is already taken!"
+        android:textColor="#ff0000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/lol_name"
+        android:paddingTop="115dp"
+        android:text="Trip Time:" />
+
+    <TextView
+        android:id="@+id/trip_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/lol_name"
+        android:paddingTop="115dp"
+        android:text="00:00:00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView"
+        android:paddingTop="15dp"
+        android:text="Distance:" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/trip_time"
+        android:paddingTop="15dp"
+        android:text="00.00 mi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/distance"
+        android:paddingTop="15dp"
+        android:text="Avg Speed:" />
+
+    <TextView
+        android:id="@+id/avg_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/distance"
+        android:paddingTop="15dp"
+        android:text="00.0 mph" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/avg_speed"
+        android:paddingTop="15dp"
+        android:text="Avg Speed:" />
+
+    <TextView
+        android:id="@+id/avg_moving_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/avg_speed"
+        android:paddingTop="15dp"
+        android:text="00.0 mph" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/avg_moving_speed"
+        android:paddingLeft="91dp"
+        android:text="(moving)"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/avg_moving_speed"
+        android:paddingTop="15dp"
+        android:text="Stop Time:" />
+
+    <TextView
+        android:id="@+id/stop_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/avg_moving_speed"
+        android:paddingTop="15dp"
+        android:text="00:00:00"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="15dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/stop_time"
+        android:text="Heading:"/>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stop_time"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:paddingTop="15dp"
+        android:text="00.0&#176;"/>
+
+    <Button
+        android:id="@+id/save_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:padding="16dp"
+        android:text="Save Route"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="24dp" />
+
+</RelativeLayout>
