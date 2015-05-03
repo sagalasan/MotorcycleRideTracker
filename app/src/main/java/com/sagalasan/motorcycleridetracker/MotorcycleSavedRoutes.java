@@ -22,7 +22,7 @@ public class MotorcycleSavedRoutes extends ActionBarActivity implements Motorcyc
 {
     private ListView lv;
     private ArrayAdapter<String> arrayAdapter;
-    ArrayList<String> routeNames;
+    ArrayList<String> routeNames, routes;
     MyDBHandler dbHandler;
 
     @Override
@@ -32,9 +32,11 @@ public class MotorcycleSavedRoutes extends ActionBarActivity implements Motorcyc
         setContentView(R.layout.activity_motorcycle_saved_routes);
 
         lv = (ListView) findViewById(R.id.saved_routes);
+        routes = new ArrayList<String>();
         routeNames = new ArrayList<String>();
 
         dbHandler = new MyDBHandler(this, null, null, 1);
+        dbHandler.deleteMotorcycleRoute(name);
 
         popArrayList();
 
@@ -75,7 +77,13 @@ public class MotorcycleSavedRoutes extends ActionBarActivity implements Motorcyc
 
     private void popArrayList()
     {
-        routeNames = dbHandler.returnRoutes();
+        routes.clear();
+        routes = dbHandler.returnRoutes();
+
+        for(int i = 0; i < routes.size(); i++)
+        {
+            routeNames.add(routes.get(i).toString());
+        }
     }
 
     private void deleteRoute(int position)
@@ -86,7 +94,8 @@ public class MotorcycleSavedRoutes extends ActionBarActivity implements Motorcyc
 
     Runnable run = new Runnable() {
         @Override
-        public void run() {
+        public void run()
+        {
             routeNames.clear();
             popArrayList();
             arrayAdapter.notifyDataSetChanged();

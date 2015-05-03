@@ -12,7 +12,7 @@
         android:id="@+id/count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:textSize="24dp"
         android:textColor="#ffffff"
         android:text="12"/>

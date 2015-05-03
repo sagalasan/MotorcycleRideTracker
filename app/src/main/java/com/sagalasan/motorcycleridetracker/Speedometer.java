@@ -46,6 +46,9 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
     Button startTracking;
     TextView countView;
 
+    private double lastLatVal = 0;
+    private double lastLonVal = 0;
+
     private boolean tracking;
     private Timer timer;
     private SpeedometerView sv;
@@ -65,8 +68,6 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
     private long theTime;
 
     private long prevTime = 0;
-
-    private static final String name = "default";
 
     private GregorianCalendar sDate, cDate;
     MyDBHandler dbHandler;
@@ -130,12 +131,14 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
         averageSpeed = 0;
         averageSpeedMoving = 0;
 
-        startTracking.setText("Start lfjdslk");
+        startTracking.setText("Start Tracker");
         tracking = false;
         dbHandler = new MyDBHandler(this, null, null, 1);
 
+        dbHandler.deleteMotorcycleRoute(name);
 
         dbHandler.addMotorcyclePoint(new MotorcyclePoint("hi"));
+        dbHandler.addMotorcyclePoint(new MotorcyclePoint("blah"));
 
         sv.reset();
         sv.setSpeed(0);
@@ -235,14 +238,23 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
                     Log.e("adding", "adding");
                     countView.setText(String.valueOf(++count));
 
-                    if(count > 1);
+                    if(count > 1)
                     {
                         //float dist;
                         //dist = (float) distBetween(mp.get_latitude(), mp.get_longitude(), mpPrev.get_latitude(), mp.get_longitude());
                         //totalDistance += dist;
-                        totalDistance = averageSpeed * (time - startTime) / 1000 / 60 / 60;
-                        sv.setTotalDistance(String.format("%.1f mi", totalDistance));
+                        //totalDistance = averageSpeed * (time - startTime) / 1000 / 60 / 60;
+                        //sv.setTotalDistance(String.format("%.1f mi", totalDistance));
+
+                        float dist;
+                        float[] distArray = new float[1];
+                        Location.distanceBetween(lastLonVal, lastLatVal, longitude, latitude, distArray);
+                        dist = distArray[0];
+                        totalDistance += dist;
+                        sv.setTotalDistance(String.format(".1f mi", totalDistance));
                     }
+                    lastLatVal = latitude;
+                    lastLonVal = longitude;
                     mpPrev = mp;
                 }
                 else if(speed < 2)
