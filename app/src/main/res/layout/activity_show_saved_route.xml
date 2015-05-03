@@ -1,16 +1,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/MyTextStyle"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/carbon_fiber_background_v"
-    android:paddingBottom="5dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    tools:context="com.sagalasan.motorcycleridetracker.PostTrackingEdit">
+                xmlns:tools="http://schemas.android.com/tools"
+                style="@style/MyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/carbon_fiber_background_v"
+                tools:context="com.sagalasan.motorcycleridetracker.ShowSavedRoute">
 
     <LinearLayout
-        android:id="@+id/lol_name"
+        android:id="@+id/s_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -21,24 +18,13 @@
             android:layout_gravity="center"
             android:text="Name:" />
 
-        <EditText
+        <TextView
             android:id="@+id/route_name"
-            android:textColor="#ffffff"
             android:layout_width="match_parent"
+            android:paddingLeft="20dp"
             android:layout_height="wrap_content"
             android:singleLine="true" />
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/name_taken"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/lol_name"
-        android:visibility="invisible"
-        android:text="Name is already taken!"
-        android:textColor="#ff0000"
-        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -164,7 +150,6 @@
         android:padding="16dp"
         android:text="Save Route"
         android:textAllCaps="false"
-        android:onClick="saveRoute"
         android:textColor="#000000"
         android:textSize="24dp" />
 

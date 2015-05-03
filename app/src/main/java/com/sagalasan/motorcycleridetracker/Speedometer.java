@@ -2,6 +2,7 @@ package com.sagalasan.motorcycleridetracker;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -36,7 +37,7 @@ import java.util.TimerTask;
 import java.util.logging.LogRecord;
 
 
-public class Speedometer extends Activity implements LocationListener
+public class Speedometer extends Activity implements LocationListener, MotorcycleData
 {
     private int count;
 
@@ -61,6 +62,8 @@ public class Speedometer extends Activity implements LocationListener
     private float averageSpeed;
     private float averageSpeedMoving;
 
+    private long theTime;
+
     private long prevTime = 0;
 
     private static final String name = "default";
@@ -78,7 +81,10 @@ public class Speedometer extends Activity implements LocationListener
         @Override
         public void run()
         {
-
+            if(tracking)
+            {
+                sv.setElapsedTime(String.valueOf(returnElapsedTime(startTime, System.currentTimeMillis())));
+            }
         }
     };
 
@@ -96,6 +102,8 @@ public class Speedometer extends Activity implements LocationListener
         sv = (SpeedometerView) findViewById(R.id.speedo);
         sv.setScreenSize(size.x, size.y);
 
+        startTime = 0;
+
         sv.setStartTime(System.currentTimeMillis());
 
         countView = (TextView) findViewById(R.id.count);
@@ -107,9 +115,9 @@ public class Speedometer extends Activity implements LocationListener
         totalSpeedMoving = 0;
 
         lm = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-        criteria = new Criteria();
-        criteria.setAccuracy(Criteria.ACCURACY_FINE);
-        lm.getBestProvider(criteria, true);
+        //criteria = new Criteria();
+        //criteria.setAccuracy(Criteria.ACCURACY_FINE);
+        //lm.getBestProvider(criteria, true);
         lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, this);
 
 
@@ -126,9 +134,12 @@ public class Speedometer extends Activity implements LocationListener
         tracking = false;
         dbHandler = new MyDBHandler(this, null, null, 1);
 
+
+        dbHandler.addMotorcyclePoint(new MotorcyclePoint("hi"));
+
         sv.reset();
         sv.setSpeed(0);
-        //startup();
+        startup();
         timer = new Timer();
         timer.schedule(new TimerTask()
         {
@@ -137,7 +148,7 @@ public class Speedometer extends Activity implements LocationListener
             {
                 startup();
             }
-        }, 0, 250);
+        }, 0, 1000);
     }
 
     public void startTracker(View view)
@@ -150,16 +161,31 @@ public class Speedometer extends Activity implements LocationListener
             sDate = new GregorianCalendar();
             cDate = new GregorianCalendar();
             startTime = sDate.getTimeInMillis();
+            mp = new MotorcyclePoint(name);
+            mp.set_time(startTime);
+            dbHandler.addMotorcyclePoint(mp);
         } else if (tracking)
         {
+            long finalTime;
+            finalTime = System.currentTimeMillis();
             tracking = false;
             startTracking.setText("Start Tracker");
+            mp = new MotorcyclePoint(name);
+            mp.set_time(finalTime);
+            dbHandler.addMotorcyclePoint(mp);
             startTracking.setTextColor(Color.BLACK);
+            Intent intent = new Intent(this, PostTrackingEdit.class);
+            intent.putExtra(ELAPSED_TIME, finalTime - startTime);
+            startActivity(intent);
         }
     }
 
     public void viewRoutes(View view)
     {
+        //dbHandler.deleteMotorcycleRoute(name);
+        Intent intent = new Intent(this, MotorcycleSavedRoutes.class);
+
+        startActivity(intent);
     }
 
     private void startup()
@@ -170,6 +196,11 @@ public class Speedometer extends Activity implements LocationListener
     @Override
     public void onLocationChanged(Location location)
     {
+
+        if(tracking)
+        {
+            sv.setElapsedTime(String.valueOf(returnElapsedTime(startTime, System.currentTimeMillis())));
+        }
         if (location != null)
         {
             speed = location.getSpeed();
@@ -197,8 +228,11 @@ public class Speedometer extends Activity implements LocationListener
                     latitude = location.getLatitude();
                     longitude = location.getLongitude();
                     elevation = 0;
+                    mp = new MotorcyclePoint(name);
                     mp.setGpsPoint(time, latitude, longitude, elevation);
+                    mp.set_speed(speed);
                     dbHandler.addMotorcyclePoint(mp);
+                    Log.e("adding", "adding");
                     countView.setText(String.valueOf(++count));
 
                     if(count > 1);
@@ -216,6 +250,11 @@ public class Speedometer extends Activity implements LocationListener
 
                 }
             }
+        }
+        else
+        {
+            sv.setBearing("---");
+            sv.setSpeed(-1);
         }
     }
 

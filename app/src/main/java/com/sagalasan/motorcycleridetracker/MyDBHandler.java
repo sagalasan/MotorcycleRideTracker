@@ -2,8 +2,11 @@ package com.sagalasan.motorcycleridetracker;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+import java.util.ArrayList;
 
 /**
  * Created by Christiaan on 3/31/2015.
@@ -23,6 +26,8 @@ public class MyDBHandler extends SQLiteOpenHelper
     public static final String COLUMN_SPEED = "speed";
     public static final String COLUMN_LEAN = "lean";
 
+    ArrayList<String> routes;
+
     public MyDBHandler(Context context, String name, SQLiteDatabase.CursorFactory factory, int version)
     {
         super(context, DATABASE_NAME, factory, DATABASE_VERSION);
@@ -34,7 +39,7 @@ public class MyDBHandler extends SQLiteOpenHelper
         String query = "CREATE TABLE " + TABLE_MOTORCYCLE + " (" +
                 COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_NAME + " TEXT, " +
-                COLUMN_TIME + " INTEGER " +
+                COLUMN_TIME + " INTEGER, " +
                 COLUMN_LATITUDE + " TEXT, " +
                 COLUMN_LONGITUDE + " TEXT, " +
                 COLUMN_ELEVATION + " INTEGER, " +
@@ -46,6 +51,7 @@ public class MyDBHandler extends SQLiteOpenHelper
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
     {
+        db = getWritableDatabase();
         String query = "DROP TABLE IF EXISTS " + TABLE_MOTORCYCLE;
         db.execSQL(query);
         onCreate(db);
@@ -67,12 +73,68 @@ public class MyDBHandler extends SQLiteOpenHelper
         db.close();
     }
 
-    public void deleteMotorcyclePoint(MotorcyclePoint mp)
+    public void deleteMotorcycleRoute(String name)
     {
         SQLiteDatabase db = getWritableDatabase();
-        String mpName = mp.get_name();
+        String mpName = name;
         String query = "DELETE FROM " + TABLE_MOTORCYCLE + " WHERE " + COLUMN_NAME + "=\"" + mpName + "\";";
         db.execSQL(query);
         db.close();
+    }
+
+    public ArrayList<String> returnRoutes()
+    {
+        routes = new ArrayList<String>();
+
+        SQLiteDatabase db = getWritableDatabase();
+        String query = "SELECT * FROM " + TABLE_MOTORCYCLE + " WHERE 1";
+        String currentName = "";
+        String tempName = "";
+
+        Cursor c = db.rawQuery(query, null);
+        c.moveToFirst();
+
+        Log.e("dummY", "dummmmy");
+
+        while(!c.isAfterLast())
+        {
+            if(c.getString(c.getColumnIndex(COLUMN_NAME)) != null)
+            {
+                tempName = c.getString(c.getColumnIndex(COLUMN_NAME));
+                if(!doesStringExist(tempName))
+                {
+                    Log.e("hi", "hi");
+                    routes.add(tempName);
+                }
+                currentName = tempName;
+
+                c.moveToNext();
+            }
+        }
+        c.close();
+        db.close();
+
+        return routes;
+    }
+
+    private boolean doesStringExist(String x)
+    {
+        boolean result = false;
+        for(int i = 0; i < routes.size(); i++)
+        {
+            if(x.equals(routes.get(i)))
+            {
+                result = true;
+            }
+        }
+        return result;
+    }
+
+    public void updateName(String oldName, String newName)
+    {
+        ContentValues cv = new ContentValues();
+        cv.put(COLUMN_NAME, newName);
+        SQLiteDatabase db = getWritableDatabase();
+        db.update(TABLE_MOTORCYCLE, cv, COLUMN_NAME + "=" + oldName + ";", null);
     }
 }

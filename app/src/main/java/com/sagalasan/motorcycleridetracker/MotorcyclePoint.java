@@ -53,6 +53,8 @@ public class MotorcyclePoint
         this._lean = _lean;
     }
 
+    public void set_time(long time) { this._time = time;}
+
     public String get_name() {
         return _name;
     }

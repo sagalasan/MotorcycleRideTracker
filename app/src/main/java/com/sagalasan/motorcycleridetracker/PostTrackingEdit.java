@@ -1,17 +1,19 @@
 package com.sagalasan.motorcycleridetracker;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class PostTrackingEdit extends ActionBarActivity
+public class PostTrackingEdit extends ActionBarActivity implements MotorcycleData
 {
     EditText editName;
     TextView tripTimeTV;
@@ -23,11 +25,19 @@ public class PostTrackingEdit extends ActionBarActivity
     TextView nameTakenTV;
     Button saveRouteButton;
 
+    Long time;
+
+    MyDBHandler dbHandler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_tracking_edit);
+
+        Intent intent = getIntent();
+        time = intent.getLongExtra(ELAPSED_TIME, 1);
+        dbHandler = new MyDBHandler(this, null, null, 1);
         init();
 
         editName.addTextChangedListener(new TextValidator(editName)
@@ -51,6 +61,10 @@ public class PostTrackingEdit extends ActionBarActivity
         tripHeadingTV = (TextView) findViewById(R.id.heading);
         nameTakenTV = (TextView) findViewById(R.id.name_taken);
         saveRouteButton = (Button) findViewById(R.id.save_route);
+
+        String eTime = returnElapsedTime(0l, time);
+
+        tripTimeTV.setText(eTime);
     }
 
 
@@ -107,5 +121,53 @@ public class PostTrackingEdit extends ActionBarActivity
         {
         }
 
+    }
+
+    public void saveRoute(View view)
+    {
+        String saveName = editName.getText().toString();
+        dbHandler.updateName("default", saveName);
+        Intent intent = new Intent(this, Speedometer.class);
+        startActivity(intent);
+    }
+
+    private String returnElapsedTime(long sTime, long cTime)
+    {
+        String result = "";
+        long seconds, minutes, hours;
+
+        long time = cTime - sTime;
+        seconds = (time / 1000)  % 60;
+        minutes = (time / 1000 / 60) % 60;
+        hours = (time / 1000 / 60 / 60);
+
+        if(hours < 10)
+        {
+            result += "0" + hours;
+        }
+        else
+        {
+            result += hours;
+        }
+        result += ":";
+        if(minutes < 10)
+        {
+            result += "0" + minutes;
+        }
+        else
+        {
+            result += minutes;
+        }
+        result += ":";
+        if(seconds < 10)
+        {
+            result += "0" + seconds;
+        }
+        else
+        {
+            result += seconds;
+        }
+
+        return result;
     }
 }

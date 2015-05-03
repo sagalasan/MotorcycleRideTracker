@@ -11,5 +11,6 @@
 
     <string name="title_activity_post_tracking_edit">PostTrackingEdit</string>
     <string name="title_activity_motorcycle_saved_routes">MotorcycleSavedRoutes</string>
+    <string name="title_activity_show_saved_route">ShowSavedRoute</string>
 
 </resources>

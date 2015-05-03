@@ -234,7 +234,15 @@ public class SpeedometerView extends View
     private void drawDigitalSpeedo(Canvas canvas)
     {
         int currentSpeed = (int) speed;
-        String speedText = String.valueOf(currentSpeed);
+        String speedText;
+        if(currentSpeed < 1)
+        {
+            speedText = "-";
+        }
+        else
+        {
+            speedText = String.valueOf(currentSpeed);
+        }
         canvas.drawText(speedText, mWidth / 2, mWidth - speedoTextSize - 70, speedoPaint);
         canvas.drawText(speedUnits, mWidth / 2, mWidth - speedoTextSize - 10, speedoUnitPaint);
     }
@@ -258,7 +266,7 @@ public class SpeedometerView extends View
     private void drawBearing(Canvas canvas)
     {
         String temp = bearing + Character.toString((char) 176);
-        canvas.drawText("Bearing", mWidth / 4, boxZero + 400f, nameTextPaint);
+        canvas.drawText("Bearing", mWidth / 4 + 30f, boxZero + 400f - 30f, nameTextPaint);
         canvas.drawText(temp, 3 * mWidth / 4, boxZero + 400f, infoTextPaint);
     }
 
@@ -363,6 +371,7 @@ public class SpeedometerView extends View
     public void setElapsedTime(String t)
     {
         elapsedTime = t;
+        reDraw();
     }
 
     public void setTotalDistance(String d)

@@ -1323,16 +1323,16 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08002e;
         public static final int action_mode_bar_stub=0x7f08002d;
         public static final int action_mode_close_button=0x7f080020;
-        public static final int action_settings=0x7f080050;
+        public static final int action_settings=0x7f080052;
         public static final int activity_chooser_view_content=0x7f080021;
-        public static final int activity_speedometer=0x7f08004b;
+        public static final int activity_speedometer=0x7f08004c;
         public static final int always=0x7f080016;
         public static final int avg_moving_speed=0x7f080047;
         public static final int avg_speed=0x7f080046;
         public static final int beginning=0x7f080013;
         public static final int checkbox=0x7f080029;
         public static final int collapseActionView=0x7f080017;
-        public static final int count=0x7f08004c;
+        public static final int count=0x7f08004d;
         public static final int decor_content_parent=0x7f08002f;
         public static final int default_activity_button=0x7f080024;
         public static final int dialog=0x7f08001b;
@@ -1351,6 +1351,7 @@ containing a value of this type.
         public static final int image=0x7f080023;
         public static final int listMode=0x7f080009;
         public static final int list_item=0x7f080025;
+        public static final int list_name=0x7f080051;
         public static final int lol_name=0x7f080040;
         public static final int middle=0x7f080015;
         public static final int name_taken=0x7f080042;
@@ -1361,6 +1362,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f080006;
         public static final int radio=0x7f08002b;
         public static final int route_name=0x7f080041;
+        public static final int s_name=0x7f08004b;
         public static final int save_route=0x7f08004a;
         public static final int saved_routes=0x7f08003f;
         public static final int search_badge=0x7f080035;
@@ -1377,9 +1379,9 @@ containing a value of this type.
         public static final int showCustom=0x7f08000f;
         public static final int showHome=0x7f080010;
         public static final int showTitle=0x7f080011;
-        public static final int speedo=0x7f08004d;
+        public static final int speedo=0x7f08004e;
         public static final int split_action_bar=0x7f080007;
-        public static final int start_tracking=0x7f08004e;
+        public static final int start_tracking=0x7f08004f;
         public static final int stop_time=0x7f080048;
         public static final int submit_area=0x7f08003c;
         public static final int tabMode=0x7f08000b;
@@ -1388,7 +1390,7 @@ containing a value of this type.
         public static final int trip_time=0x7f080044;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
-        public static final int view_route=0x7f08004f;
+        public static final int view_route=0x7f080050;
         public static final int withText=0x7f08001a;
         public static final int wrap_content=0x7f08001d;
     }
@@ -1421,13 +1423,16 @@ containing a value of this type.
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_motorcycle_saved_routes=0x7f030017;
         public static final int activity_post_tracking_edit=0x7f030018;
-        public static final int activity_speedometer=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int activity_show_saved_route=0x7f030019;
+        public static final int activity_speedometer=0x7f03001a;
+        public static final int list_item_custom_m=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
     }
     public static final class menu {
         public static final int menu_motorcycle_saved_routes=0x7f0c0000;
         public static final int menu_post_tracking_edit=0x7f0c0001;
-        public static final int menu_speedometer=0x7f0c0002;
+        public static final int menu_show_saved_route=0x7f0c0002;
+        public static final int menu_speedometer=0x7f0c0003;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f0a0000;
@@ -1452,6 +1457,7 @@ containing a value of this type.
         public static final int needle=0x7f0a0013;
         public static final int title_activity_motorcycle_saved_routes=0x7f0a0014;
         public static final int title_activity_post_tracking_edit=0x7f0a0015;
+        public static final int title_activity_show_saved_route=0x7f0a0016;
     }
     public static final class style {
         /**  Customize your theme here. 
@@ -1702,33 +1708,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background com.sagalasan.motorcycleridetracker:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit com.sagalasan.motorcycleridetracker:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked com.sagalasan.motorcycleridetracker:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd com.sagalasan.motorcycleridetracker:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft com.sagalasan.motorcycleridetracker:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight com.sagalasan.motorcycleridetracker:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart com.sagalasan.motorcycleridetracker:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout com.sagalasan.motorcycleridetracker:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions com.sagalasan.motorcycleridetracker:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider com.sagalasan.motorcycleridetracker:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation com.sagalasan.motorcycleridetracker:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height com.sagalasan.motorcycleridetracker:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.sagalasan.motorcycleridetracker:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.sagalasan.motorcycleridetracker:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout com.sagalasan.motorcycleridetracker:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon com.sagalasan.motorcycleridetracker:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.sagalasan.motorcycleridetracker:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding com.sagalasan.motorcycleridetracker:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.sagalasan.motorcycleridetracker:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode com.sagalasan.motorcycleridetracker:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme com.sagalasan.motorcycleridetracker:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding com.sagalasan.motorcycleridetracker:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle com.sagalasan.motorcycleridetracker:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle com.sagalasan.motorcycleridetracker:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.sagalasan.motorcycleridetracker:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title com.sagalasan.motorcycleridetracker:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle com.sagalasan.motorcycleridetracker:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background com.sagalasan.ridetracker:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.sagalasan.ridetracker:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.sagalasan.ridetracker:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.sagalasan.ridetracker:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.sagalasan.ridetracker:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.sagalasan.ridetracker:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.sagalasan.ridetracker:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.sagalasan.ridetracker:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.sagalasan.ridetracker:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.sagalasan.ridetracker:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.sagalasan.ridetracker:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height com.sagalasan.ridetracker:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.sagalasan.ridetracker:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.sagalasan.ridetracker:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.sagalasan.ridetracker:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.sagalasan.ridetracker:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.sagalasan.ridetracker:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.sagalasan.ridetracker:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.sagalasan.ridetracker:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.sagalasan.ridetracker:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.sagalasan.ridetracker:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.sagalasan.ridetracker:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.sagalasan.ridetracker:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.sagalasan.ridetracker:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.sagalasan.ridetracker:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.sagalasan.ridetracker:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.sagalasan.ridetracker:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -1768,17 +1774,17 @@ containing a value of this type.
             0x7f01001a, 0x7f01001b, 0x7f010071
         };
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#background}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:background
+          @attr name com.sagalasan.ridetracker:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1786,11 +1792,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:backgroundSplit
+          @attr name com.sagalasan.ridetracker:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1798,11 +1804,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:backgroundStacked
+          @attr name com.sagalasan.ridetracker:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1814,11 +1820,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:contentInsetEnd
+          @attr name com.sagalasan.ridetracker:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1830,11 +1836,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:contentInsetLeft
+          @attr name com.sagalasan.ridetracker:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1846,11 +1852,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:contentInsetRight
+          @attr name com.sagalasan.ridetracker:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1862,21 +1868,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:contentInsetStart
+          @attr name com.sagalasan.ridetracker:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:customNavigationLayout
+          @attr name com.sagalasan.ridetracker:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1894,21 +1900,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name com.sagalasan.motorcycleridetracker:displayOptions
+          @attr name com.sagalasan.ridetracker:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:divider
+          @attr name com.sagalasan.ridetracker:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1920,11 +1926,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:elevation
+          @attr name com.sagalasan.ridetracker:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#height}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1936,11 +1942,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:height
+          @attr name com.sagalasan.ridetracker:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1950,51 +1956,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:hideOnContentScroll
+          @attr name com.sagalasan.ridetracker:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:homeAsUpIndicator
+          @attr name com.sagalasan.ridetracker:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:homeLayout
+          @attr name com.sagalasan.ridetracker:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:icon
+          @attr name com.sagalasan.ridetracker:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:indeterminateProgressStyle
+          @attr name com.sagalasan.ridetracker:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2006,21 +2012,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:itemPadding
+          @attr name com.sagalasan.ridetracker:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:logo
+          @attr name com.sagalasan.ridetracker:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2034,21 +2040,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.sagalasan.motorcycleridetracker:navigationMode
+          @attr name com.sagalasan.ridetracker:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:popupTheme
+          @attr name com.sagalasan.ridetracker:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2060,21 +2066,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:progressBarPadding
+          @attr name com.sagalasan.ridetracker:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:progressBarStyle
+          @attr name com.sagalasan.ridetracker:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2084,21 +2090,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:subtitle
+          @attr name com.sagalasan.ridetracker:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:subtitleTextStyle
+          @attr name com.sagalasan.ridetracker:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#title}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2108,17 +2114,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:title
+          @attr name com.sagalasan.ridetracker:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:titleTextStyle
+          @attr name com.sagalasan.ridetracker:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -2170,12 +2176,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background com.sagalasan.motorcycleridetracker:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit com.sagalasan.motorcycleridetracker:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout com.sagalasan.motorcycleridetracker:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height com.sagalasan.motorcycleridetracker:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.sagalasan.motorcycleridetracker:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle com.sagalasan.motorcycleridetracker:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background com.sagalasan.ridetracker:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.sagalasan.ridetracker:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.sagalasan.ridetracker:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height com.sagalasan.ridetracker:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.sagalasan.ridetracker:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.sagalasan.ridetracker:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -2189,17 +2195,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001c
         };
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#background}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:background
+          @attr name com.sagalasan.ridetracker:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -2207,21 +2213,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:backgroundSplit
+          @attr name com.sagalasan.ridetracker:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:closeItemLayout
+          @attr name com.sagalasan.ridetracker:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#height}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -2233,27 +2239,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:height
+          @attr name com.sagalasan.ridetracker:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:subtitleTextStyle
+          @attr name com.sagalasan.ridetracker:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:titleTextStyle
+          @attr name com.sagalasan.ridetracker:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -2262,8 +2268,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.sagalasan.motorcycleridetracker:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.sagalasan.motorcycleridetracker:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.sagalasan.ridetracker:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.sagalasan.ridetracker:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -2272,17 +2278,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001d, 0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:expandActivityOverflowButtonDrawable
+          @attr name com.sagalasan.ridetracker:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -2292,7 +2298,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:initialActivityCount
+          @attr name com.sagalasan.ridetracker:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a CompatTextView.
@@ -2301,7 +2307,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CompatTextView_textAllCaps com.sagalasan.motorcycleridetracker:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompatTextView_textAllCaps com.sagalasan.ridetracker:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #CompatTextView_textAllCaps
          */
@@ -2309,14 +2315,14 @@ containing a value of this type.
             0x7f01001f
         };
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#textAllCaps}
           attribute's value can be found in the {@link #CompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.sagalasan.motorcycleridetracker:textAllCaps
+          @attr name com.sagalasan.ridetracker:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -2325,14 +2331,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barSize com.sagalasan.motorcycleridetracker:barSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color com.sagalasan.motorcycleridetracker:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.sagalasan.motorcycleridetracker:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.sagalasan.motorcycleridetracker:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize com.sagalasan.motorcycleridetracker:middleBarArrowSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.sagalasan.motorcycleridetracker:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness com.sagalasan.motorcycleridetracker:thickness}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize com.sagalasan.motorcycleridetracker:topBottomBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barSize com.sagalasan.ridetracker:barSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.sagalasan.ridetracker:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.sagalasan.ridetracker:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.sagalasan.ridetracker:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize com.sagalasan.ridetracker:middleBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.sagalasan.ridetracker:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.sagalasan.ridetracker:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize com.sagalasan.ridetracker:topBottomBarArrowSize}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_barSize
            @see #DrawerArrowToggle_color
@@ -2348,7 +2354,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027
         };
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#barSize}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#barSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2360,11 +2366,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:barSize
+          @attr name com.sagalasan.ridetracker:barSize
         */
         public static final int DrawerArrowToggle_barSize = 6;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#color}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2375,11 +2381,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:color
+          @attr name com.sagalasan.ridetracker:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2391,11 +2397,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:drawableSize
+          @attr name com.sagalasan.ridetracker:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2407,11 +2413,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:gapBetweenBars
+          @attr name com.sagalasan.ridetracker:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#middleBarArrowSize}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#middleBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2423,11 +2429,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:middleBarArrowSize
+          @attr name com.sagalasan.ridetracker:middleBarArrowSize
         */
         public static final int DrawerArrowToggle_middleBarArrowSize = 5;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2437,11 +2443,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:spinBars
+          @attr name com.sagalasan.ridetracker:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#thickness}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2453,11 +2459,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:thickness
+          @attr name com.sagalasan.ridetracker:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#topBottomBarArrowSize}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#topBottomBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2469,7 +2475,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:topBottomBarArrowSize
+          @attr name com.sagalasan.ridetracker:topBottomBarArrowSize
         */
         public static final int DrawerArrowToggle_topBottomBarArrowSize = 4;
         /** Attributes that can be used with a InfoBox.
@@ -2488,10 +2494,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider com.sagalasan.motorcycleridetracker:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.sagalasan.motorcycleridetracker:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.sagalasan.motorcycleridetracker:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.sagalasan.motorcycleridetracker:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.sagalasan.ridetracker:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.sagalasan.ridetracker:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.sagalasan.ridetracker:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.sagalasan.ridetracker:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -2539,17 +2545,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:divider
+          @attr name com.sagalasan.ridetracker:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -2561,11 +2567,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:dividerPadding
+          @attr name com.sagalasan.ridetracker:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -2575,11 +2581,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:measureWithLargestChild
+          @attr name com.sagalasan.ridetracker:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -2594,7 +2600,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.sagalasan.motorcycleridetracker:showDividers
+          @attr name com.sagalasan.ridetracker:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -2733,9 +2739,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout com.sagalasan.motorcycleridetracker:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass com.sagalasan.motorcycleridetracker:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass com.sagalasan.motorcycleridetracker:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout com.sagalasan.ridetracker:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.sagalasan.ridetracker:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.sagalasan.ridetracker:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -2749,7 +2755,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction com.sagalasan.motorcycleridetracker:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.sagalasan.ridetracker:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -2777,17 +2783,17 @@ containing a value of this type.
             0x7f01002e
         };
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionLayout
+          @attr name com.sagalasan.ridetracker:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -2797,11 +2803,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:actionProviderClass
+          @attr name com.sagalasan.ridetracker:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -2811,7 +2817,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:actionViewClass
+          @attr name com.sagalasan.ridetracker:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -2893,7 +2899,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -2909,7 +2915,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name com.sagalasan.motorcycleridetracker:showAsAction
+          @attr name com.sagalasan.ridetracker:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -2925,7 +2931,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing com.sagalasan.motorcycleridetracker:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.sagalasan.ridetracker:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -2983,7 +2989,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -2993,7 +2999,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:preserveIconSpacing
+          @attr name com.sagalasan.ridetracker:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a PopupWindow.
@@ -3003,7 +3009,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor com.sagalasan.motorcycleridetracker:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.sagalasan.ridetracker:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -3018,7 +3024,7 @@ containing a value of this type.
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -3028,7 +3034,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:overlapAnchor
+          @attr name com.sagalasan.ridetracker:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -3037,7 +3043,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.sagalasan.motorcycleridetracker:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.sagalasan.ridetracker:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -3045,7 +3051,7 @@ containing a value of this type.
             0x7f010031
         };
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -3055,7 +3061,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:state_above_anchor
+          @attr name com.sagalasan.ridetracker:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a SearchView.
@@ -3068,17 +3074,17 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon com.sagalasan.motorcycleridetracker:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon com.sagalasan.motorcycleridetracker:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon com.sagalasan.motorcycleridetracker:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault com.sagalasan.motorcycleridetracker:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout com.sagalasan.motorcycleridetracker:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground com.sagalasan.motorcycleridetracker:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint com.sagalasan.motorcycleridetracker:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon com.sagalasan.motorcycleridetracker:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground com.sagalasan.motorcycleridetracker:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout com.sagalasan.motorcycleridetracker:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon com.sagalasan.motorcycleridetracker:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon com.sagalasan.ridetracker:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.sagalasan.ridetracker:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.sagalasan.ridetracker:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.sagalasan.ridetracker:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout com.sagalasan.ridetracker:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.sagalasan.ridetracker:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.sagalasan.ridetracker:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.sagalasan.ridetracker:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.sagalasan.ridetracker:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.sagalasan.ridetracker:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.sagalasan.ridetracker:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -3127,37 +3133,37 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:closeIcon
+          @attr name com.sagalasan.ridetracker:closeIcon
         */
         public static final int SearchView_closeIcon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:commitIcon
+          @attr name com.sagalasan.ridetracker:commitIcon
         */
         public static final int SearchView_commitIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:goIcon
+          @attr name com.sagalasan.ridetracker:goIcon
         */
         public static final int SearchView_goIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -3167,31 +3173,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:iconifiedByDefault
+          @attr name com.sagalasan.ridetracker:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#layout}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:layout
+          @attr name com.sagalasan.ridetracker:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:queryBackground
+          @attr name com.sagalasan.ridetracker:queryBackground
         */
         public static final int SearchView_queryBackground = 13;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -3201,47 +3207,47 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:queryHint
+          @attr name com.sagalasan.ridetracker:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:searchIcon
+          @attr name com.sagalasan.ridetracker:searchIcon
         */
         public static final int SearchView_searchIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:submitBackground
+          @attr name com.sagalasan.ridetracker:submitBackground
         */
         public static final int SearchView_submitBackground = 14;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:suggestionRowLayout
+          @attr name com.sagalasan.ridetracker:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 12;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:voiceIcon
+          @attr name com.sagalasan.ridetracker:voiceIcon
         */
         public static final int SearchView_voiceIcon = 10;
         /** Attributes that can be used with a SpeedometerView.
@@ -3262,10 +3268,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.sagalasan.motorcycleridetracker:disableChildrenWhenDisabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupPromptView com.sagalasan.motorcycleridetracker:popupPromptView}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_prompt com.sagalasan.motorcycleridetracker:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_spinnerMode com.sagalasan.motorcycleridetracker:spinnerMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.sagalasan.ridetracker:disableChildrenWhenDisabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupPromptView com.sagalasan.ridetracker:popupPromptView}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_prompt com.sagalasan.ridetracker:prompt}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode com.sagalasan.ridetracker:spinnerMode}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_background
            @see #Spinner_android_dropDownHorizontalOffset
@@ -3327,7 +3333,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Spinner_android_popupBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#disableChildrenWhenDisabled}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#disableChildrenWhenDisabled}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -3337,31 +3343,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:disableChildrenWhenDisabled
+          @attr name com.sagalasan.ridetracker:disableChildrenWhenDisabled
         */
         public static final int Spinner_disableChildrenWhenDisabled = 10;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#popupPromptView}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#popupPromptView}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:popupPromptView
+          @attr name com.sagalasan.ridetracker:popupPromptView
         */
         public static final int Spinner_popupPromptView = 9;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#prompt}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#prompt}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:prompt
+          @attr name com.sagalasan.ridetracker:prompt
         */
         public static final int Spinner_prompt = 7;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#spinnerMode}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#spinnerMode}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -3374,7 +3380,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>dialog</code></td><td>0</td><td></td></tr>
 <tr><td><code>dropdown</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.sagalasan.motorcycleridetracker:spinnerMode
+          @attr name com.sagalasan.ridetracker:spinnerMode
         */
         public static final int Spinner_spinnerMode = 8;
         /** Attributes that can be used with a SwitchCompat.
@@ -3386,13 +3392,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText com.sagalasan.motorcycleridetracker:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack com.sagalasan.motorcycleridetracker:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.sagalasan.motorcycleridetracker:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding com.sagalasan.motorcycleridetracker:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.sagalasan.motorcycleridetracker:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.sagalasan.motorcycleridetracker:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track com.sagalasan.motorcycleridetracker:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText com.sagalasan.ridetracker:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.sagalasan.ridetracker:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.sagalasan.ridetracker:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.sagalasan.ridetracker:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.sagalasan.ridetracker:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.sagalasan.ridetracker:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.sagalasan.ridetracker:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -3429,7 +3435,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#showText}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3439,11 +3445,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:showText
+          @attr name com.sagalasan.ridetracker:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3453,11 +3459,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:splitTrack
+          @attr name com.sagalasan.ridetracker:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3469,11 +3475,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:switchMinWidth
+          @attr name com.sagalasan.ridetracker:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3485,21 +3491,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:switchPadding
+          @attr name com.sagalasan.ridetracker:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:switchTextAppearance
+          @attr name com.sagalasan.ridetracker:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3511,17 +3517,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:thumbTextPadding
+          @attr name com.sagalasan.ridetracker:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#track}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:track
+          @attr name com.sagalasan.ridetracker:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a Theme.
@@ -3530,89 +3536,89 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider com.sagalasan.motorcycleridetracker:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground com.sagalasan.motorcycleridetracker:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme com.sagalasan.motorcycleridetracker:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize com.sagalasan.motorcycleridetracker:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle com.sagalasan.motorcycleridetracker:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle com.sagalasan.motorcycleridetracker:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.sagalasan.motorcycleridetracker:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle com.sagalasan.motorcycleridetracker:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.sagalasan.motorcycleridetracker:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme com.sagalasan.motorcycleridetracker:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.sagalasan.motorcycleridetracker:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle com.sagalasan.motorcycleridetracker:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle com.sagalasan.motorcycleridetracker:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.sagalasan.motorcycleridetracker:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor com.sagalasan.motorcycleridetracker:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground com.sagalasan.motorcycleridetracker:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.sagalasan.motorcycleridetracker:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.sagalasan.motorcycleridetracker:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.sagalasan.motorcycleridetracker:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable com.sagalasan.motorcycleridetracker:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable com.sagalasan.motorcycleridetracker:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable com.sagalasan.motorcycleridetracker:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.sagalasan.motorcycleridetracker:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.sagalasan.motorcycleridetracker:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable com.sagalasan.motorcycleridetracker:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground com.sagalasan.motorcycleridetracker:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeStyle com.sagalasan.motorcycleridetracker:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.sagalasan.motorcycleridetracker:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.sagalasan.motorcycleridetracker:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.sagalasan.motorcycleridetracker:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle com.sagalasan.motorcycleridetracker:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider com.sagalasan.ridetracker:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground com.sagalasan.ridetracker:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme com.sagalasan.ridetracker:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize com.sagalasan.ridetracker:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle com.sagalasan.ridetracker:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle com.sagalasan.ridetracker:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.sagalasan.ridetracker:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle com.sagalasan.ridetracker:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.sagalasan.ridetracker:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme com.sagalasan.ridetracker:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.sagalasan.ridetracker:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle com.sagalasan.ridetracker:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle com.sagalasan.ridetracker:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.sagalasan.ridetracker:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor com.sagalasan.ridetracker:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground com.sagalasan.ridetracker:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.sagalasan.ridetracker:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.sagalasan.ridetracker:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.sagalasan.ridetracker:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable com.sagalasan.ridetracker:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable com.sagalasan.ridetracker:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable com.sagalasan.ridetracker:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.sagalasan.ridetracker:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.sagalasan.ridetracker:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable com.sagalasan.ridetracker:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground com.sagalasan.ridetracker:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle com.sagalasan.ridetracker:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.sagalasan.ridetracker:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.sagalasan.ridetracker:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.sagalasan.ridetracker:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle com.sagalasan.ridetracker:activityChooserViewStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.sagalasan.motorcycleridetracker:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle com.sagalasan.motorcycleridetracker:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorAccent com.sagalasan.motorcycleridetracker:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal com.sagalasan.motorcycleridetracker:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated com.sagalasan.motorcycleridetracker:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight com.sagalasan.motorcycleridetracker:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal com.sagalasan.motorcycleridetracker:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary com.sagalasan.motorcycleridetracker:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark com.sagalasan.motorcycleridetracker:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.sagalasan.motorcycleridetracker:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal com.sagalasan.motorcycleridetracker:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical com.sagalasan.motorcycleridetracker:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle com.sagalasan.motorcycleridetracker:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.sagalasan.motorcycleridetracker:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground com.sagalasan.motorcycleridetracker:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextColor com.sagalasan.motorcycleridetracker:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator com.sagalasan.motorcycleridetracker:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.sagalasan.motorcycleridetracker:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPopupWindowStyle com.sagalasan.motorcycleridetracker:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight com.sagalasan.motorcycleridetracker:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.sagalasan.motorcycleridetracker:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.sagalasan.motorcycleridetracker:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.sagalasan.motorcycleridetracker:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.sagalasan.motorcycleridetracker:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelBackground com.sagalasan.motorcycleridetracker:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme com.sagalasan.motorcycleridetracker:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth com.sagalasan.motorcycleridetracker:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle com.sagalasan.motorcycleridetracker:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle com.sagalasan.motorcycleridetracker:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle com.sagalasan.motorcycleridetracker:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground com.sagalasan.motorcycleridetracker:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.sagalasan.motorcycleridetracker:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.sagalasan.motorcycleridetracker:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle com.sagalasan.motorcycleridetracker:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_switchStyle com.sagalasan.motorcycleridetracker:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.sagalasan.motorcycleridetracker:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem com.sagalasan.motorcycleridetracker:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.sagalasan.motorcycleridetracker:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.sagalasan.motorcycleridetracker:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.sagalasan.motorcycleridetracker:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.sagalasan.motorcycleridetracker:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl com.sagalasan.motorcycleridetracker:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.sagalasan.motorcycleridetracker:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle com.sagalasan.motorcycleridetracker:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar com.sagalasan.motorcycleridetracker:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay com.sagalasan.motorcycleridetracker:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay com.sagalasan.motorcycleridetracker:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.sagalasan.motorcycleridetracker:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.sagalasan.motorcycleridetracker:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.sagalasan.motorcycleridetracker:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.sagalasan.motorcycleridetracker:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.sagalasan.ridetracker:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle com.sagalasan.ridetracker:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorAccent com.sagalasan.ridetracker:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal com.sagalasan.ridetracker:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated com.sagalasan.ridetracker:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight com.sagalasan.ridetracker:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal com.sagalasan.ridetracker:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary com.sagalasan.ridetracker:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark com.sagalasan.ridetracker:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.sagalasan.ridetracker:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal com.sagalasan.ridetracker:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical com.sagalasan.ridetracker:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle com.sagalasan.ridetracker:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.sagalasan.ridetracker:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground com.sagalasan.ridetracker:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextColor com.sagalasan.ridetracker:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator com.sagalasan.ridetracker:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.sagalasan.ridetracker:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle com.sagalasan.ridetracker:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight com.sagalasan.ridetracker:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.sagalasan.ridetracker:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.sagalasan.ridetracker:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.sagalasan.ridetracker:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.sagalasan.ridetracker:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelBackground com.sagalasan.ridetracker:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme com.sagalasan.ridetracker:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth com.sagalasan.ridetracker:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle com.sagalasan.ridetracker:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle com.sagalasan.ridetracker:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle com.sagalasan.ridetracker:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground com.sagalasan.ridetracker:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.sagalasan.ridetracker:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.sagalasan.ridetracker:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle com.sagalasan.ridetracker:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_switchStyle com.sagalasan.ridetracker:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.sagalasan.ridetracker:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem com.sagalasan.ridetracker:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.sagalasan.ridetracker:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.sagalasan.ridetracker:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.sagalasan.ridetracker:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.sagalasan.ridetracker:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl com.sagalasan.ridetracker:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.sagalasan.ridetracker:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle com.sagalasan.ridetracker:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar com.sagalasan.ridetracker:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay com.sagalasan.ridetracker:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay com.sagalasan.ridetracker:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.sagalasan.ridetracker:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.sagalasan.ridetracker:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.sagalasan.ridetracker:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.sagalasan.ridetracker:windowFixedWidthMinor}</code></td><td></td></tr>
            </table>
            @see #Theme_actionBarDivider
            @see #Theme_actionBarItemBackground
@@ -3722,37 +3728,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010097, 0x7f010098, 0x7f010099
         };
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionBarDivider
+          @attr name com.sagalasan.ridetracker:actionBarDivider
         */
         public static final int Theme_actionBarDivider = 19;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionBarItemBackground
+          @attr name com.sagalasan.ridetracker:actionBarItemBackground
         */
         public static final int Theme_actionBarItemBackground = 20;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionBarPopupTheme
+          @attr name com.sagalasan.ridetracker:actionBarPopupTheme
         */
         public static final int Theme_actionBarPopupTheme = 13;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -3772,111 +3778,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name com.sagalasan.motorcycleridetracker:actionBarSize
+          @attr name com.sagalasan.ridetracker:actionBarSize
         */
         public static final int Theme_actionBarSize = 18;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionBarSplitStyle
+          @attr name com.sagalasan.ridetracker:actionBarSplitStyle
         */
         public static final int Theme_actionBarSplitStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionBarStyle
+          @attr name com.sagalasan.ridetracker:actionBarStyle
         */
         public static final int Theme_actionBarStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionBarTabBarStyle
+          @attr name com.sagalasan.ridetracker:actionBarTabBarStyle
         */
         public static final int Theme_actionBarTabBarStyle = 9;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionBarTabStyle
+          @attr name com.sagalasan.ridetracker:actionBarTabStyle
         */
         public static final int Theme_actionBarTabStyle = 8;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionBarTabTextStyle
+          @attr name com.sagalasan.ridetracker:actionBarTabTextStyle
         */
         public static final int Theme_actionBarTabTextStyle = 10;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionBarTheme
+          @attr name com.sagalasan.ridetracker:actionBarTheme
         */
         public static final int Theme_actionBarTheme = 16;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionBarWidgetTheme
+          @attr name com.sagalasan.ridetracker:actionBarWidgetTheme
         */
         public static final int Theme_actionBarWidgetTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionButtonStyle
+          @attr name com.sagalasan.ridetracker:actionButtonStyle
         */
         public static final int Theme_actionButtonStyle = 43;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionDropDownStyle
+          @attr name com.sagalasan.ridetracker:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 38;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionMenuTextAppearance
+          @attr name com.sagalasan.ridetracker:actionMenuTextAppearance
         */
         public static final int Theme_actionMenuTextAppearance = 21;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -3884,167 +3890,167 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionMenuTextColor
+          @attr name com.sagalasan.ridetracker:actionMenuTextColor
         */
         public static final int Theme_actionMenuTextColor = 22;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModeBackground
+          @attr name com.sagalasan.ridetracker:actionModeBackground
         */
         public static final int Theme_actionModeBackground = 25;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModeCloseButtonStyle
+          @attr name com.sagalasan.ridetracker:actionModeCloseButtonStyle
         */
         public static final int Theme_actionModeCloseButtonStyle = 24;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModeCloseDrawable
+          @attr name com.sagalasan.ridetracker:actionModeCloseDrawable
         */
         public static final int Theme_actionModeCloseDrawable = 27;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModeCopyDrawable
+          @attr name com.sagalasan.ridetracker:actionModeCopyDrawable
         */
         public static final int Theme_actionModeCopyDrawable = 29;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModeCutDrawable
+          @attr name com.sagalasan.ridetracker:actionModeCutDrawable
         */
         public static final int Theme_actionModeCutDrawable = 28;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModeFindDrawable
+          @attr name com.sagalasan.ridetracker:actionModeFindDrawable
         */
         public static final int Theme_actionModeFindDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModePasteDrawable
+          @attr name com.sagalasan.ridetracker:actionModePasteDrawable
         */
         public static final int Theme_actionModePasteDrawable = 30;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModePopupWindowStyle
+          @attr name com.sagalasan.ridetracker:actionModePopupWindowStyle
         */
         public static final int Theme_actionModePopupWindowStyle = 35;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModeSelectAllDrawable
+          @attr name com.sagalasan.ridetracker:actionModeSelectAllDrawable
         */
         public static final int Theme_actionModeSelectAllDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModeShareDrawable
+          @attr name com.sagalasan.ridetracker:actionModeShareDrawable
         */
         public static final int Theme_actionModeShareDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModeSplitBackground
+          @attr name com.sagalasan.ridetracker:actionModeSplitBackground
         */
         public static final int Theme_actionModeSplitBackground = 26;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModeStyle
+          @attr name com.sagalasan.ridetracker:actionModeStyle
         */
         public static final int Theme_actionModeStyle = 23;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionModeWebSearchDrawable
+          @attr name com.sagalasan.ridetracker:actionModeWebSearchDrawable
         */
         public static final int Theme_actionModeWebSearchDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionOverflowButtonStyle
+          @attr name com.sagalasan.ridetracker:actionOverflowButtonStyle
         */
         public static final int Theme_actionOverflowButtonStyle = 11;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:actionOverflowMenuStyle
+          @attr name com.sagalasan.ridetracker:actionOverflowMenuStyle
         */
         public static final int Theme_actionOverflowMenuStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:activityChooserViewStyle
+          @attr name com.sagalasan.ridetracker:activityChooserViewStyle
         */
         public static final int Theme_activityChooserViewStyle = 50;
         /**
@@ -4054,27 +4060,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:buttonBarButtonStyle
+          @attr name com.sagalasan.ridetracker:buttonBarButtonStyle
         */
         public static final int Theme_buttonBarButtonStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:buttonBarStyle
+          @attr name com.sagalasan.ridetracker:buttonBarStyle
         */
         public static final int Theme_buttonBarStyle = 44;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4085,11 +4091,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:colorAccent
+          @attr name com.sagalasan.ridetracker:colorAccent
         */
         public static final int Theme_colorAccent = 77;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4100,11 +4106,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:colorButtonNormal
+          @attr name com.sagalasan.ridetracker:colorButtonNormal
         */
         public static final int Theme_colorButtonNormal = 81;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4115,11 +4121,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:colorControlActivated
+          @attr name com.sagalasan.ridetracker:colorControlActivated
         */
         public static final int Theme_colorControlActivated = 79;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4130,11 +4136,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:colorControlHighlight
+          @attr name com.sagalasan.ridetracker:colorControlHighlight
         */
         public static final int Theme_colorControlHighlight = 80;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4145,11 +4151,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:colorControlNormal
+          @attr name com.sagalasan.ridetracker:colorControlNormal
         */
         public static final int Theme_colorControlNormal = 78;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4160,11 +4166,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:colorPrimary
+          @attr name com.sagalasan.ridetracker:colorPrimary
         */
         public static final int Theme_colorPrimary = 75;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4175,11 +4181,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:colorPrimaryDark
+          @attr name com.sagalasan.ridetracker:colorPrimaryDark
         */
         public static final int Theme_colorPrimaryDark = 76;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4190,41 +4196,41 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:colorSwitchThumbNormal
+          @attr name com.sagalasan.ridetracker:colorSwitchThumbNormal
         */
         public static final int Theme_colorSwitchThumbNormal = 82;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:dividerHorizontal
+          @attr name com.sagalasan.ridetracker:dividerHorizontal
         */
         public static final int Theme_dividerHorizontal = 49;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:dividerVertical
+          @attr name com.sagalasan.ridetracker:dividerVertical
         */
         public static final int Theme_dividerVertical = 48;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:dropDownListViewStyle
+          @attr name com.sagalasan.ridetracker:dropDownListViewStyle
         */
         public static final int Theme_dropDownListViewStyle = 67;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4236,21 +4242,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:dropdownListPreferredItemHeight
+          @attr name com.sagalasan.ridetracker:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 39;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:editTextBackground
+          @attr name com.sagalasan.ridetracker:editTextBackground
         */
         public static final int Theme_editTextBackground = 56;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4258,41 +4264,41 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:editTextColor
+          @attr name com.sagalasan.ridetracker:editTextColor
         */
         public static final int Theme_editTextColor = 55;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:homeAsUpIndicator
+          @attr name com.sagalasan.ridetracker:homeAsUpIndicator
         */
         public static final int Theme_homeAsUpIndicator = 42;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:listChoiceBackgroundIndicator
+          @attr name com.sagalasan.ridetracker:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 74;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:listPopupWindowStyle
+          @attr name com.sagalasan.ridetracker:listPopupWindowStyle
         */
         public static final int Theme_listPopupWindowStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4304,11 +4310,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:listPreferredItemHeight
+          @attr name com.sagalasan.ridetracker:listPreferredItemHeight
         */
         public static final int Theme_listPreferredItemHeight = 62;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4320,11 +4326,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:listPreferredItemHeightLarge
+          @attr name com.sagalasan.ridetracker:listPreferredItemHeightLarge
         */
         public static final int Theme_listPreferredItemHeightLarge = 64;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4336,11 +4342,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:listPreferredItemHeightSmall
+          @attr name com.sagalasan.ridetracker:listPreferredItemHeightSmall
         */
         public static final int Theme_listPreferredItemHeightSmall = 63;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4352,11 +4358,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:listPreferredItemPaddingLeft
+          @attr name com.sagalasan.ridetracker:listPreferredItemPaddingLeft
         */
         public static final int Theme_listPreferredItemPaddingLeft = 65;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4368,31 +4374,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:listPreferredItemPaddingRight
+          @attr name com.sagalasan.ridetracker:listPreferredItemPaddingRight
         */
         public static final int Theme_listPreferredItemPaddingRight = 66;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:panelBackground
+          @attr name com.sagalasan.ridetracker:panelBackground
         */
         public static final int Theme_panelBackground = 71;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:panelMenuListTheme
+          @attr name com.sagalasan.ridetracker:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 73;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4404,151 +4410,151 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:panelMenuListWidth
+          @attr name com.sagalasan.ridetracker:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 72;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:popupMenuStyle
+          @attr name com.sagalasan.ridetracker:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 53;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:popupWindowStyle
+          @attr name com.sagalasan.ridetracker:popupWindowStyle
         */
         public static final int Theme_popupWindowStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:searchViewStyle
+          @attr name com.sagalasan.ridetracker:searchViewStyle
         */
         public static final int Theme_searchViewStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:selectableItemBackground
+          @attr name com.sagalasan.ridetracker:selectableItemBackground
         */
         public static final int Theme_selectableItemBackground = 46;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:selectableItemBackgroundBorderless
+          @attr name com.sagalasan.ridetracker:selectableItemBackgroundBorderless
         */
         public static final int Theme_selectableItemBackgroundBorderless = 47;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:spinnerDropDownItemStyle
+          @attr name com.sagalasan.ridetracker:spinnerDropDownItemStyle
         */
         public static final int Theme_spinnerDropDownItemStyle = 41;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:spinnerStyle
+          @attr name com.sagalasan.ridetracker:spinnerStyle
         */
         public static final int Theme_spinnerStyle = 40;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:switchStyle
+          @attr name com.sagalasan.ridetracker:switchStyle
         */
         public static final int Theme_switchStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:textAppearanceLargePopupMenu
+          @attr name com.sagalasan.ridetracker:textAppearanceLargePopupMenu
         */
         public static final int Theme_textAppearanceLargePopupMenu = 36;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:textAppearanceListItem
+          @attr name com.sagalasan.ridetracker:textAppearanceListItem
         */
         public static final int Theme_textAppearanceListItem = 69;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:textAppearanceListItemSmall
+          @attr name com.sagalasan.ridetracker:textAppearanceListItemSmall
         */
         public static final int Theme_textAppearanceListItemSmall = 70;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:textAppearanceSearchResultSubtitle
+          @attr name com.sagalasan.ridetracker:textAppearanceSearchResultSubtitle
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 59;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:textAppearanceSearchResultTitle
+          @attr name com.sagalasan.ridetracker:textAppearanceSearchResultTitle
         */
         public static final int Theme_textAppearanceSearchResultTitle = 58;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:textAppearanceSmallPopupMenu
+          @attr name com.sagalasan.ridetracker:textAppearanceSmallPopupMenu
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 37;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4556,31 +4562,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:textColorSearchUrl
+          @attr name com.sagalasan.ridetracker:textColorSearchUrl
         */
         public static final int Theme_textColorSearchUrl = 60;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:toolbarNavigationButtonStyle
+          @attr name com.sagalasan.ridetracker:toolbarNavigationButtonStyle
         */
         public static final int Theme_toolbarNavigationButtonStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:toolbarStyle
+          @attr name com.sagalasan.ridetracker:toolbarStyle
         */
         public static final int Theme_toolbarStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4590,11 +4596,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:windowActionBar
+          @attr name com.sagalasan.ridetracker:windowActionBar
         */
         public static final int Theme_windowActionBar = 1;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4604,11 +4610,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:windowActionBarOverlay
+          @attr name com.sagalasan.ridetracker:windowActionBarOverlay
         */
         public static final int Theme_windowActionBarOverlay = 2;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4618,11 +4624,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:windowActionModeOverlay
+          @attr name com.sagalasan.ridetracker:windowActionModeOverlay
         */
         public static final int Theme_windowActionModeOverlay = 3;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4637,11 +4643,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:windowFixedHeightMajor
+          @attr name com.sagalasan.ridetracker:windowFixedHeightMajor
         */
         public static final int Theme_windowFixedHeightMajor = 7;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4656,11 +4662,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:windowFixedHeightMinor
+          @attr name com.sagalasan.ridetracker:windowFixedHeightMinor
         */
         public static final int Theme_windowFixedHeightMinor = 5;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4675,11 +4681,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:windowFixedWidthMajor
+          @attr name com.sagalasan.ridetracker:windowFixedWidthMajor
         */
         public static final int Theme_windowFixedWidthMajor = 4;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4694,7 +4700,7 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:windowFixedWidthMinor
+          @attr name com.sagalasan.ridetracker:windowFixedWidthMinor
         */
         public static final int Theme_windowFixedWidthMinor = 6;
         /** Attributes that can be used with a Toolbar.
@@ -4705,26 +4711,26 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription com.sagalasan.motorcycleridetracker:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon com.sagalasan.motorcycleridetracker:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd com.sagalasan.motorcycleridetracker:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft com.sagalasan.motorcycleridetracker:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight com.sagalasan.motorcycleridetracker:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart com.sagalasan.motorcycleridetracker:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight com.sagalasan.motorcycleridetracker:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription com.sagalasan.motorcycleridetracker:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon com.sagalasan.motorcycleridetracker:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme com.sagalasan.motorcycleridetracker:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle com.sagalasan.motorcycleridetracker:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.sagalasan.motorcycleridetracker:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_theme com.sagalasan.motorcycleridetracker:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title com.sagalasan.motorcycleridetracker:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom com.sagalasan.motorcycleridetracker:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd com.sagalasan.motorcycleridetracker:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart com.sagalasan.motorcycleridetracker:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop com.sagalasan.motorcycleridetracker:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins com.sagalasan.motorcycleridetracker:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance com.sagalasan.motorcycleridetracker:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.sagalasan.ridetracker:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.sagalasan.ridetracker:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.sagalasan.ridetracker:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.sagalasan.ridetracker:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.sagalasan.ridetracker:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.sagalasan.ridetracker:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.sagalasan.ridetracker:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.sagalasan.ridetracker:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon com.sagalasan.ridetracker:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme com.sagalasan.ridetracker:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.sagalasan.ridetracker:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.sagalasan.ridetracker:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_theme com.sagalasan.ridetracker:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.sagalasan.ridetracker:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.sagalasan.ridetracker:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.sagalasan.ridetracker:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.sagalasan.ridetracker:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.sagalasan.ridetracker:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.sagalasan.ridetracker:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.sagalasan.ridetracker:titleTextAppearance}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -4770,7 +4776,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4780,21 +4786,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:collapseContentDescription
+          @attr name com.sagalasan.ridetracker:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:collapseIcon
+          @attr name com.sagalasan.ridetracker:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4806,11 +4812,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:contentInsetEnd
+          @attr name com.sagalasan.ridetracker:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 5;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4822,11 +4828,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:contentInsetLeft
+          @attr name com.sagalasan.ridetracker:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 6;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4838,11 +4844,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:contentInsetRight
+          @attr name com.sagalasan.ridetracker:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 7;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4854,11 +4860,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:contentInsetStart
+          @attr name com.sagalasan.ridetracker:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 4;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4870,11 +4876,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:maxButtonHeight
+          @attr name com.sagalasan.ridetracker:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 16;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4884,31 +4890,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:navigationContentDescription
+          @attr name com.sagalasan.ridetracker:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:navigationIcon
+          @attr name com.sagalasan.ridetracker:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:popupTheme
+          @attr name com.sagalasan.ridetracker:popupTheme
         */
         public static final int Toolbar_popupTheme = 8;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4918,31 +4924,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:subtitle
+          @attr name com.sagalasan.ridetracker:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:subtitleTextAppearance
+          @attr name com.sagalasan.ridetracker:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#theme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:theme
+          @attr name com.sagalasan.ridetracker:theme
         */
         public static final int Toolbar_theme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#title}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4952,11 +4958,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:title
+          @attr name com.sagalasan.ridetracker:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4968,11 +4974,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:titleMarginBottom
+          @attr name com.sagalasan.ridetracker:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 15;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4984,11 +4990,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:titleMarginEnd
+          @attr name com.sagalasan.ridetracker:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5000,11 +5006,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:titleMarginStart
+          @attr name com.sagalasan.ridetracker:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 12;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5016,11 +5022,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:titleMarginTop
+          @attr name com.sagalasan.ridetracker:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 14;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5032,17 +5038,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:titleMargins
+          @attr name com.sagalasan.ridetracker:titleMargins
         */
         public static final int Toolbar_titleMargins = 11;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.sagalasan.motorcycleridetracker:titleTextAppearance
+          @attr name com.sagalasan.ridetracker:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 9;
         /** Attributes that can be used with a View.
@@ -5052,8 +5058,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd com.sagalasan.motorcycleridetracker:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart com.sagalasan.motorcycleridetracker:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.sagalasan.ridetracker:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart com.sagalasan.ridetracker:paddingStart}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_paddingEnd
@@ -5069,7 +5075,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int View_android_focusable = 0;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -5081,11 +5087,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:paddingEnd
+          @attr name com.sagalasan.ridetracker:paddingEnd
         */
         public static final int View_paddingEnd = 2;
         /**
-          <p>This symbol is the offset where the {@link com.sagalasan.motorcycleridetracker.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.sagalasan.ridetracker.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -5097,7 +5103,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.sagalasan.motorcycleridetracker:paddingStart
+          @attr name com.sagalasan.ridetracker:paddingStart
         */
         public static final int View_paddingStart = 1;
         /** Attributes that can be used with a ViewStubCompat.

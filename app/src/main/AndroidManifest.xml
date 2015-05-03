@@ -3,6 +3,7 @@
     package="com.sagalasan.motorcycleridetracker" >
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -28,6 +29,11 @@
         <activity
             android:name=".MotorcycleSavedRoutes"
             android:label="@string/title_activity_motorcycle_saved_routes" >
+        </activity>
+        <activity
+            android:name=".ShowSavedRoute"
+            android:label="@string/title_activity_show_saved_route"
+            android:theme="@style/MyTextStyle">
         </activity>
     </application>
 
