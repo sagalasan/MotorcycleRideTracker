@@ -132,9 +132,9 @@ public class MyDBHandler extends SQLiteOpenHelper
 
     public void updateName(String oldName, String newName)
     {
-        ContentValues cv = new ContentValues();
-        cv.put(COLUMN_NAME, newName);
         SQLiteDatabase db = getWritableDatabase();
-        db.update(TABLE_MOTORCYCLE, cv, COLUMN_NAME + "=" + oldName + ";", null);
+        String ex = "UPDATE " + TABLE_MOTORCYCLE + " SET " + COLUMN_NAME + "='" + newName + "'  WHERE " + COLUMN_NAME + "='" + oldName + "'";
+        db.execSQL(ex);
+        db.close();
     }
 }

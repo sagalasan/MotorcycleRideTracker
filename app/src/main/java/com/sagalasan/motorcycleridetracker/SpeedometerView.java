@@ -266,8 +266,8 @@ public class SpeedometerView extends View
     private void drawBearing(Canvas canvas)
     {
         String temp = bearing + Character.toString((char) 176);
-        canvas.drawText("Bearing", mWidth / 4 + 30f, boxZero + 400f - 30f, nameTextPaint);
-        canvas.drawText(temp, 3 * mWidth / 4, boxZero + 400f, infoTextPaint);
+        canvas.drawText("Bearing", mWidth / 4 + 50f, boxZero + 400f, nameTextPaint);
+        canvas.drawText(temp, 3 * mWidth / 4 - 100f, boxZero + 400f, infoTextPaint);
     }
 
     /**
