@@ -63,7 +63,7 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
     private double totalSpeed;
     private double totalSpeedMoving;
 
-    private float averageSpeed;
+    private float averageSpeed = 0;
     private float averageSpeedMoving;
     private long movingCount;
 
@@ -142,10 +142,14 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
         tracking = false;
         dbHandler = new MyDBHandler(this, null, null, 1);
 
+        //dbHandler.onUpgrade(null, 1, 1);
+
         dbHandler.deleteMotorcycleRoute(name);
 
         dbHandler.addMotorcyclePoint(new MotorcyclePoint("hi"));
         dbHandler.addMotorcyclePoint(new MotorcyclePoint("blah"));
+
+
 
         sv.reset();
         sv.setSpeed(0);

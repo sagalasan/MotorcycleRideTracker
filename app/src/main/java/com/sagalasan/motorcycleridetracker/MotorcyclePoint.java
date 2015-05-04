@@ -34,6 +34,15 @@ public class MotorcyclePoint
         this._lean = _lean;
     }
 
+    public MotorcyclePoint(String _name, long _time, double _latitude, double _longitude, double _speed)
+    {
+        this._name = _name;
+        this._time = _time;
+        this._latitude = _latitude;
+        this._longitude = _longitude;
+        this._speed = _speed;
+    }
+
     public void setGpsPoint(long _time, double _latitude, double _longitude, long _elevation)
     {
         this._time = _time;

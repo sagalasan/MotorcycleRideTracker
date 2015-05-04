@@ -43,7 +43,7 @@ public class MyDBHandler extends SQLiteOpenHelper
                 COLUMN_LATITUDE + " TEXT, " +
                 COLUMN_LONGITUDE + " TEXT, " +
                 COLUMN_ELEVATION + " INTEGER, " +
-                COLUMN_SPEED + " INTEGER, " +
+                COLUMN_SPEED + " TEXT, " +
                 COLUMN_LEAN + " INTEGER" + ");";
         db.execSQL(query);
     }
@@ -65,7 +65,7 @@ public class MyDBHandler extends SQLiteOpenHelper
         values.put(COLUMN_LATITUDE, String.valueOf(mp.get_latitude()));
         values.put(COLUMN_LONGITUDE, String.valueOf(mp.get_longitude()));
         values.put(COLUMN_ELEVATION, mp.get_elevation());
-        values.put(COLUMN_SPEED, mp.get_speed());
+        values.put(COLUMN_SPEED, String.valueOf(mp.get_speed()));
         values.put(COLUMN_LEAN, mp.get_lean());
 
         SQLiteDatabase db = getWritableDatabase();
@@ -94,7 +94,7 @@ public class MyDBHandler extends SQLiteOpenHelper
         Cursor c = db.rawQuery(query, null);
         c.moveToFirst();
 
-        Log.e("dummY", "dummmmy");
+        //Log.e("dummY", "dummmmy");
 
         while(!c.isAfterLast())
         {
@@ -103,7 +103,7 @@ public class MyDBHandler extends SQLiteOpenHelper
                 tempName = c.getString(c.getColumnIndex(COLUMN_NAME));
                 if(!doesStringExist(tempName))
                 {
-                    Log.e("hi", "hi");
+                    //Log.e("hi", "hi");
                     routes.add(tempName);
                 }
                 currentName = tempName;
@@ -141,8 +141,42 @@ public class MyDBHandler extends SQLiteOpenHelper
     public ArrayList<MotorcyclePoint> returnRidePoints(String ride)
     {
         ArrayList<MotorcyclePoint> m = new ArrayList<MotorcyclePoint>();
+        MotorcyclePoint mp;
 
-        
+        String lat, lon, s;
+
+        long time;
+        double latitude;
+        double longitude;
+        double speed;
+
+        SQLiteDatabase db = getWritableDatabase();
+        String query = "SELECT * FROM " + TABLE_MOTORCYCLE + " WHERE 1";
+
+        Cursor c = db.rawQuery(query, null);
+        c.moveToFirst();
+
+        while(!c.isAfterLast())
+        {
+            if(c.getString(c.getColumnIndex(COLUMN_NAME)).equals(ride))
+            {
+                time = c.getLong(c.getColumnIndex(COLUMN_TIME));
+
+                lat = c.getString(c.getColumnIndex(COLUMN_LATITUDE));
+                lon = c.getString(c.getColumnIndex(COLUMN_LONGITUDE));
+                s = c.getString(c.getColumnIndex(COLUMN_SPEED));
+
+                latitude = Double.parseDouble(lat);
+                longitude = Double.parseDouble(lon);
+                speed = Double.parseDouble(s);
+
+                mp = new MotorcyclePoint(ride, time, latitude, longitude, speed);
+                m.add(mp);
+            }
+            c.moveToNext();
+        }
+        c.close();
+        db.close();
 
         return m;
     }
