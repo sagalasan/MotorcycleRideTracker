@@ -79,6 +79,9 @@ public class SpeedometerView extends View
     private String totalDistance = "00.0 mi";
     private String bearing = "278";
 
+    private String averageSpeedMoving = "00.00 mph";
+    private String averageSpeedAll = "00.00 mph";
+
     private static final String TAG = "MyActivity";
 
     public SpeedometerView(Context context, AttributeSet attrs)
@@ -258,9 +261,9 @@ public class SpeedometerView extends View
     {
         canvas.drawText(averageSpeed, 3 * mWidth / 4, boxZero, nameTextPaint);
         canvas.drawText("Moving:", mWidth / 2 + 30, boxZero + nameTextSize / 2 - 10, subTextPaint);
-        canvas.drawText("00.0 MPH", 3 * mWidth / 4, boxZero + nameTextSize + textMargin, infoTextPaint);
+        canvas.drawText(averageSpeedMoving, 3 * mWidth / 4, boxZero + nameTextSize + textMargin, infoTextPaint);
         canvas.drawText("All:", mWidth / 2 + 30, boxZero + nameTextSize + 2 * textMargin + 10, subTextPaint);
-        canvas.drawText("00.0 MPH", 3 * mWidth / 4, boxZero + 2 * (infoTextSize + textMargin), infoTextPaint);
+        canvas.drawText(averageSpeedAll, 3 * mWidth / 4, boxZero + 2 * (infoTextSize + textMargin), infoTextPaint);
     }
 
     private void drawBearing(Canvas canvas)
@@ -373,6 +376,10 @@ public class SpeedometerView extends View
         elapsedTime = t;
         reDraw();
     }
+
+    public void setAverageSpeedMoving(String a) { averageSpeedMoving = a; }
+
+    public void setAverageSpeedAll(String a) { averageSpeedAll = a; }
 
     public void setTotalDistance(String d)
     {

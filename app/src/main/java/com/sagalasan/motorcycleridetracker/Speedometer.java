@@ -44,7 +44,7 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
     ImageView needle;
     ImageView gauge;
     Button startTracking;
-    TextView countView;
+    TextView countView, splitView;
 
     private double lastLatVal = 0;
     private double lastLonVal = 0;
@@ -59,11 +59,13 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
     private long startTime;
     private float totalDistance;
     private float bearing;
+
     private double totalSpeed;
     private double totalSpeedMoving;
 
     private float averageSpeed;
     private float averageSpeedMoving;
+    private long movingCount;
 
     private long theTime;
 
@@ -107,13 +109,14 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
 
         sv.setStartTime(System.currentTimeMillis());
 
+        splitView = (TextView) findViewById(R.id.split_time);
+
+
         countView = (TextView) findViewById(R.id.count);
         count = 0;
         countView.setText(String.valueOf(count));
 
         totalDistance = 0;
-        totalSpeed = 0;
-        totalSpeedMoving = 0;
 
         lm = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
         //criteria = new Criteria();
@@ -128,8 +131,12 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
         mpPrev = new MotorcyclePoint(name);
 
         prevTime = System.currentTimeMillis();
+
+        totalSpeed = 0;
+        totalSpeedMoving = 0;
         averageSpeed = 0;
         averageSpeedMoving = 0;
+        movingCount = 0;
 
         startTracking.setText("Start Tracker");
         tracking = false;
@@ -167,7 +174,8 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
             mp = new MotorcyclePoint(name);
             mp.set_time(startTime);
             dbHandler.addMotorcyclePoint(mp);
-        } else if (tracking)
+        }
+        else if (tracking)
         {
             long finalTime;
             finalTime = System.currentTimeMillis();
@@ -185,7 +193,8 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
 
     public void viewRoutes(View view)
     {
-        //dbHandler.deleteMotorcycleRoute(name);
+        tracking = false;
+        dbHandler.deleteMotorcycleRoute(name);
         Intent intent = new Intent(this, MotorcycleSavedRoutes.class);
 
         startActivity(intent);
@@ -199,7 +208,10 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
     @Override
     public void onLocationChanged(Location location)
     {
-
+        long s;
+        long f;
+        long d;
+        s = System.currentTimeMillis();
         if(tracking)
         {
             sv.setElapsedTime(String.valueOf(returnElapsedTime(startTime, System.currentTimeMillis())));
@@ -218,10 +230,10 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
                 long time;
                 time = System.currentTimeMillis();
                 sv.setElapsedTime(returnElapsedTime(startTime, time));
-                totalSpeed += speed * (time - prevTime) / 1000 / 60 / 60;
+                //totalSpeed += speed * (time - prevTime) / 1000 / 60 / 60;
                 prevTime = time;
 
-                averageSpeed = (float) totalSpeed / (time - startTime) * 60 * 60 * 1000;
+                //averageSpeed = (float) totalSpeed / (time - startTime) * 60 * 60 * 1000;
 
                 if(speed >= 2 || count == 0)
                 {
@@ -238,20 +250,27 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
                     Log.e("adding", "adding");
                     countView.setText(String.valueOf(++count));
 
+                    movingCount++;
+                    totalSpeedMoving += speed;
+                    averageSpeedMoving = (float) totalSpeedMoving / movingCount;
+
+                    totalSpeed += speed;
+                    averageSpeed = (float) totalSpeed / ((System.currentTimeMillis() - startTime) / 1000);
+
+                    sv.setAverageSpeedAll(String.format("%.2f mph", averageSpeed));
+                    sv.setAverageSpeedMoving(String.format("%.2f mph", averageSpeedMoving));
+
                     if(count > 1)
                     {
-                        //float dist;
-                        //dist = (float) distBetween(mp.get_latitude(), mp.get_longitude(), mpPrev.get_latitude(), mp.get_longitude());
-                        //totalDistance += dist;
-                        //totalDistance = averageSpeed * (time - startTime) / 1000 / 60 / 60;
-                        //sv.setTotalDistance(String.format("%.1f mi", totalDistance));
+
 
                         float dist;
                         float[] distArray = new float[1];
                         Location.distanceBetween(lastLonVal, lastLatVal, longitude, latitude, distArray);
                         dist = distArray[0];
+                        dist *= 0.000621371;
                         totalDistance += dist;
-                        sv.setTotalDistance(String.format(".1f mi", totalDistance));
+                        sv.setTotalDistance(String.format("%.1f mi", totalDistance));
                     }
                     lastLatVal = latitude;
                     lastLonVal = longitude;
@@ -262,6 +281,9 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
 
                 }
             }
+            f = System.currentTimeMillis();
+            d = f - s;
+            splitView.setText(String.valueOf(d));
         }
         else
         {

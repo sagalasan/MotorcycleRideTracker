@@ -1323,7 +1323,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08002e;
         public static final int action_mode_bar_stub=0x7f08002d;
         public static final int action_mode_close_button=0x7f080020;
-        public static final int action_settings=0x7f080052;
+        public static final int action_settings=0x7f080053;
         public static final int activity_chooser_view_content=0x7f080021;
         public static final int activity_speedometer=0x7f08004c;
         public static final int always=0x7f080016;
@@ -1351,7 +1351,7 @@ containing a value of this type.
         public static final int image=0x7f080023;
         public static final int listMode=0x7f080009;
         public static final int list_item=0x7f080025;
-        public static final int list_name=0x7f080051;
+        public static final int list_name=0x7f080052;
         public static final int lol_name=0x7f080040;
         public static final int middle=0x7f080015;
         public static final int name_taken=0x7f080042;
@@ -1379,9 +1379,10 @@ containing a value of this type.
         public static final int showCustom=0x7f08000f;
         public static final int showHome=0x7f080010;
         public static final int showTitle=0x7f080011;
-        public static final int speedo=0x7f08004e;
+        public static final int speedo=0x7f08004f;
         public static final int split_action_bar=0x7f080007;
-        public static final int start_tracking=0x7f08004f;
+        public static final int split_time=0x7f08004e;
+        public static final int start_tracking=0x7f080050;
         public static final int stop_time=0x7f080048;
         public static final int submit_area=0x7f08003c;
         public static final int tabMode=0x7f08000b;
@@ -1390,7 +1391,7 @@ containing a value of this type.
         public static final int trip_time=0x7f080044;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
-        public static final int view_route=0x7f080050;
+        public static final int view_route=0x7f080051;
         public static final int withText=0x7f08001a;
         public static final int wrap_content=0x7f08001d;
     }

@@ -17,6 +17,16 @@
         android:textColor="#ffffff"
         android:text="12"/>
 
+    <TextView
+        android:id="@+id/split_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        android:textSize="24dp"
+        android:textColor="#ffffff"
+        android:text="1243"/>
+
     <com.sagalasan.motorcycleridetracker.SpeedometerView
         android:id="@+id/speedo"
         android:layout_width="wrap_content"
