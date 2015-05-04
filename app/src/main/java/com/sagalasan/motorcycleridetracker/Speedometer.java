@@ -185,8 +185,14 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
             mp.set_time(finalTime);
             dbHandler.addMotorcyclePoint(mp);
             startTracking.setTextColor(Color.BLACK);
+
             Intent intent = new Intent(this, PostTrackingEdit.class);
             intent.putExtra(ELAPSED_TIME, finalTime - startTime);
+            intent.putExtra(TOTAL_DISTANCE, totalDistance);
+            intent.putExtra(AVERAGE_SPEED, averageSpeed);
+            intent.putExtra(AVERAGE_SPEEDM, averageSpeedMoving);
+            intent.putExtra(SPEED_COUNT, movingCount);
+
             startActivity(intent);
         }
     }

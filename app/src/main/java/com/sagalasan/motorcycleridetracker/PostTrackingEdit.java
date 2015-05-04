@@ -27,7 +27,14 @@ public class PostTrackingEdit extends ActionBarActivity implements MotorcycleDat
 
     Long time;
 
-    MyDBHandler dbHandler;
+    private long elapsedTime;
+    private float totalDistance;
+    private float averageSpeed;
+    private float averageSpeedMoving;
+    private long movingCount;
+    private long stopTime;
+
+    private MyDBHandler dbHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -36,7 +43,14 @@ public class PostTrackingEdit extends ActionBarActivity implements MotorcycleDat
         setContentView(R.layout.activity_post_tracking_edit);
 
         Intent intent = getIntent();
-        time = intent.getLongExtra(ELAPSED_TIME, 1);
+        elapsedTime = intent.getLongExtra(ELAPSED_TIME, 1);
+        totalDistance = intent.getFloatExtra(TOTAL_DISTANCE, 1);
+        averageSpeed = intent.getFloatExtra(AVERAGE_SPEED, 1);
+        averageSpeedMoving = intent.getFloatExtra(AVERAGE_SPEEDM, 1);
+        movingCount = intent.getLongExtra(SPEED_COUNT, 1);
+
+        stopTime = elapsedTime - movingCount * 1000;
+
         dbHandler = new MyDBHandler(this, null, null, 1);
         init();
 
@@ -62,9 +76,14 @@ public class PostTrackingEdit extends ActionBarActivity implements MotorcycleDat
         nameTakenTV = (TextView) findViewById(R.id.name_taken);
         saveRouteButton = (Button) findViewById(R.id.save_route);
 
-        String eTime = returnElapsedTime(0l, time);
+        String eTime = returnElapsedTime(0, elapsedTime);
+        String sTime = returnElapsedTime(0, stopTime);
 
         tripTimeTV.setText(eTime);
+        tripDistanceTV.setText(String.format("%.1f mi", totalDistance));
+        tripAvgSpeedTV.setText(String.format("%.1f mph", averageSpeed));
+        tripAvgSpeedMovTv.setText(String.format("%.1f mph", averageSpeedMoving));
+        tripStopTimeTV.setText(sTime);
     }
 
 

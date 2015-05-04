@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import com.sagalasan.motorcycleridetracker.R;
 
+import java.util.ArrayList;
+
 public class ShowSavedRoute extends ActionBarActivity implements MotorcycleData
 {
     TextView editName;
@@ -23,6 +25,19 @@ public class ShowSavedRoute extends ActionBarActivity implements MotorcycleData
     TextView nameTakenTV;
     Button saveRouteButton;
 
+    MyDBHandler dbHandler;s
+
+    private ArrayList<MotorcyclePoint> totalRide;
+
+    private String routeName;
+
+    private long elapsedTime;
+    private float totalDistance;
+    private float averageSpeed;
+    private float averageSpeedMoving;
+    private long movingCount;
+    private long stopTime;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -30,17 +45,25 @@ public class ShowSavedRoute extends ActionBarActivity implements MotorcycleData
         setContentView(R.layout.activity_show_saved_route);
         editName = (TextView) findViewById(R.id.route_name);
         tripTimeTV = (TextView) findViewById(R.id.trip_time);
+
+        dbHandler = new MyDBHandler(this, null, null, 1);
+
+        totalRide = new ArrayList<MotorcyclePoint>();
+
         Intent intent = getIntent();
-        String name = intent.getStringExtra(ROUTE_NAME);
+        routeName = intent.getStringExtra(ROUTE_NAME);
+
+        getRideData();
+    }
+
+    private void initVisual()
+    {
         editName.setText(name);
-        if(name.equals("hi"))
-        {
-            tripTimeTV.setText("00:23:28");
-        }
-        else
-        {
-            tripTimeTV.setText("00:04:32");
-        }
+    }
+
+    private void getRideData()
+    {
+        totalRide =
     }
 
 

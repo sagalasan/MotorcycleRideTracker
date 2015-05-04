@@ -137,4 +137,13 @@ public class MyDBHandler extends SQLiteOpenHelper
         db.execSQL(ex);
         db.close();
     }
+
+    public ArrayList<MotorcyclePoint> returnRidePoints(String ride)
+    {
+        ArrayList<MotorcyclePoint> m = new ArrayList<MotorcyclePoint>();
+
+        
+
+        return m;
+    }
 }
