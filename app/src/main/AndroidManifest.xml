@@ -23,17 +23,20 @@
         </activity>
         <activity
             android:name=".PostTrackingEdit"
-            android:label="@string/title_activity_post_tracking_edit"
+            android:label="Edit Ride"
+            android:noHistory="true"
             android:theme="@style/MyTextStyle" >
         </activity>
         <activity
             android:name=".MotorcycleSavedRoutes"
-            android:label="@string/title_activity_motorcycle_saved_routes" >
+            android:label="Saved Routes"
+            android:parentActivityName=".Speedometer">
         </activity>
         <activity
             android:name=".ShowSavedRoute"
-            android:label="@string/title_activity_show_saved_route"
-            android:theme="@style/MyTextStyle">
+            android:label="Route Details"
+            android:theme="@style/MyTextStyle"
+            android:parentActivityName=".MotorcycleSavedRoutes">
         </activity>
     </application>
 

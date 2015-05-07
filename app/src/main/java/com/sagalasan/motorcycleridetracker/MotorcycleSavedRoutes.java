@@ -3,6 +3,7 @@ package com.sagalasan.motorcycleridetracker;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.location.Location;
 import android.sax.StartElementListener;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -25,11 +26,17 @@ public class MotorcycleSavedRoutes extends ActionBarActivity implements Motorcyc
     ArrayList<String> routeNames, routes;
     MyDBHandler dbHandler;
 
+    private ArrayList<MotorcyclePoint> mp;
+    private ArrayList<Float> distances;
+    private float totalDistance;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_motorcycle_saved_routes);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         lv = (ListView) findViewById(R.id.saved_routes);
         routes = new ArrayList<String>();
@@ -39,6 +46,7 @@ public class MotorcycleSavedRoutes extends ActionBarActivity implements Motorcyc
         dbHandler.deleteMotorcycleRoute(name);
 
         popArrayList();
+        getRideData();
 
         arrayAdapter = new ArrayAdapter<String>(
                 this,
@@ -65,6 +73,37 @@ public class MotorcycleSavedRoutes extends ActionBarActivity implements Motorcyc
                 return true;
             }
         });
+    }
+
+    private void getRideData()
+    {
+        String n = "";
+        distances = new ArrayList<Float>();
+        mp = new ArrayList<MotorcyclePoint>();
+        double pLat, pLon, lat, lon;
+
+        float[] dist = new float[1];
+
+        for(int i = 0; i < routeNames.size(); i++)
+        {
+            totalDistance = 0;
+            n = routeNames.get(i);
+            mp = dbHandler.returnRidePoints(n);
+
+            pLat = mp.get(1).get_latitude();
+            pLon = mp.get(1).get_longitude();
+
+
+            for(int j = 2; j < mp.size() - 1; j++)
+            {
+                lat = mp.get(j).get_latitude();
+                lon = mp.get(j).get_longitude();
+                Location.distanceBetween(pLon, pLat, lon, lat, dist);
+                totalDistance += dist[0];
+            }
+            totalDistance *= 0.000621371;
+            distances.add(totalDistance);
+        }
     }
 
     private void jump(int p)

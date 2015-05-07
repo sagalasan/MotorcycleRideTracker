@@ -48,6 +48,9 @@ public class ShowSavedRoute extends ActionBarActivity implements MotorcycleData
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_saved_route);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         editName = (TextView) findViewById(R.id.route_name);
         tripTimeTV = (TextView) findViewById(R.id.trip_time);
         tripTimeTV = (TextView) findViewById(R.id.trip_time);

@@ -1308,6 +1308,7 @@ containing a value of this type.
         public static final int info_box=0x7f020037;
         public static final int speedometer_face_blurred=0x7f020038;
         public static final int speedometer_needle_blurred=0x7f020039;
+        public static final int what=0x7f02003a;
     }
     public static final class id {
         public static final int action_bar=0x7f080031;

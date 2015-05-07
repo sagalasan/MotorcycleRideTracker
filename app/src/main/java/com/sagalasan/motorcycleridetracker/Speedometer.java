@@ -146,8 +146,8 @@ public class Speedometer extends Activity implements LocationListener, Motorcycl
 
         dbHandler.deleteMotorcycleRoute(name);
 
-        dbHandler.addMotorcyclePoint(new MotorcyclePoint("hi"));
-        dbHandler.addMotorcyclePoint(new MotorcyclePoint("blah"));
+        //dbHandler.addMotorcyclePoint(new MotorcyclePoint("hi"));
+        //dbHandler.addMotorcyclePoint(new MotorcyclePoint("blah"));
 
 
 
